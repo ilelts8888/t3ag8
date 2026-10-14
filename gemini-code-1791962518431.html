@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chuyên Đề The Generation Gap (122 Câu) - Ms Lê Hằng English</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Quicksand:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-purple: #7952B3;
+      --primary-coral: #FF5E62;
+      --primary-yellow: #FFD166;
+      --primary-cyan: #06D6A0;
+      --accent-blue: #0984E3;
+      --correct-green: #00BA66;
+      --correct-bg: #E8F8F0;
+      --wrong-red: #FA5252;
+      --wrong-bg: #FFEAEA;
+      --card-bg: #FFFFFF;
+      --text-main: #2D3436;
+      --text-muted: #636E72;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Nunito', 'Quicksand', sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(180deg, #FFEFBA 0%, #FFDFBA 8%, #E3F2FD 35%, #CBE3F7 70%, #A0C4E2 100%);
+      background-attachment: fixed;
+      position: relative;
+      overflow-x: hidden;
+      color: var(--text-main);
+      padding-bottom: 120px;
+    }
+
+    .city-skyline {
+      position: fixed;
+      bottom: 45px;
+      left: 0;
+      width: 100%;
+      height: 120px;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.32;
+      background-repeat: repeat-x;
+      background-position: bottom;
+      background-size: 400px 120px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 120' width='400' height='120'%3E%3Cpath fill='%236C8EB5' d='M0,120 L0,60 L20,60 L20,30 L50,30 L50,120 L70,120 L70,45 L100,45 L100,120 L130,120 L130,15 L160,15 L160,120 L190,120 L190,50 L220,50 L220,120 L250,120 L250,25 L280,25 L280,120 L310,120 L310,40 L340,40 L340,120 L370,120 L370,55 L400,55 L400,120 Z'/%3E%3C/svg%3E");
+    }
+
+    .bottom-road {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 46px;
+      background: #4A4A4A;
+      border-top: 6px solid #00BA66;
+      z-index: 1;
+      pointer-events: none;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 -4px 12px rgba(0,0,0,0.15);
+    }
+    .road-curb {
+      position: absolute;
+      top: -12px;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: repeating-linear-gradient(90deg, #FF4757 0px, #FF4757 24px, #FFFFFF 24px, #FFFFFF 48px);
+    }
+    .road-lines {
+      width: 100%;
+      height: 6px;
+      background: repeating-linear-gradient(90deg, #FFFFFF 0px, #FFFFFF 35px, transparent 35px, transparent 70px);
+      opacity: 0.85;
+    }
+
+    .bg-elements {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .floating-cloud {
+      position: absolute;
+      opacity: 0.45;
+      animation: floatCloud 25s linear infinite;
+    }
+    @keyframes floatCloud {
+      0% { transform: translateX(-150px); }
+      100% { transform: translateX(110vw); }
+    }
+
+    .app-container {
+      position: relative;
+      z-index: 2;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 16px 14px;
+    }
+
+    .top-announcement {
+      background: #FFFFFF;
+      border-radius: 30px;
+      padding: 8px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+      margin-bottom: 12px;
+      border: 1.5px solid #FFDEE9;
+    }
+    .announcement-text {
+      font-size: 0.92rem;
+      font-weight: 800;
+      color: #333;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .teacher-badge {
+      background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+      color: #FFF;
+      padding: 3px 12px;
+      border-radius: 18px;
+      font-size: 0.82rem;
+      font-weight: 900;
+      letter-spacing: 0.3px;
+    }
+
+    .unit-hero-card {
+      background: #FFFFFF;
+      border-radius: 28px;
+      padding: 22px 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 24px rgba(116, 185, 255, 0.18);
+      border: 2px solid #E3F2FD;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    .unit-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: linear-gradient(90deg, #0984E3, #00CEC9);
+      color: #FFFFFF;
+      font-weight: 800;
+      font-size: 0.82rem;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .unit-title {
+      font-size: 1.55rem;
+      font-weight: 900;
+      color: #2D3436;
+      line-height: 1.25;
+      margin-bottom: 6px;
+    }
+    .unit-subtitle {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #636E72;
+    }
+    .unit-icon-box {
+      width: 90px;
+      height: 90px;
+      flex-shrink: 0;
+      border-radius: 24px;
+      background: linear-gradient(135deg, #E0F7FA, #FFF9C4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+      border: 2px solid #FFFFFF;
+    }
+
+    /* Filter Navigation Bar */
+    .filter-nav {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+    .filter-btn {
+      background: #FFFFFF;
+      border: 2px solid #CBD5E1;
+      border-radius: 16px;
+      padding: 8px 16px;
+      font-weight: 800;
+      font-size: 0.88rem;
+      color: #2D3436;
+      cursor: pointer;
+      box-shadow: 0 3px 0 #CBD5E1;
+      transition: all 0.15s ease;
+    }
+    .filter-btn.active, .filter-btn:hover {
+      background: #0984E3;
+      color: #FFFFFF;
+      border-color: #0984E3;
+      box-shadow: 0 3px 0 #0767B1;
+    }
+
+    .top-stats-bar {
+      position: sticky;
+      top: 10px;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.97);
+      backdrop-filter: blur(10px);
+      border-radius: 25px;
+      padding: 10px 18px;
+      margin-bottom: 18px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      border: 2px solid #FFF0F5;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+    .pill-counter-left {
+      background: #FF5E62;
+      color: #FFF;
+      font-weight: 900;
+      font-size: 0.95rem;
+      padding: 5px 14px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 3px 0 #D63031;
+    }
+    .bar-track {
+      flex: 1;
+      height: 16px;
+      background: #EBF3FA;
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      border: 2px solid #E1EDF8;
+    }
+    .bar-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #FDCB6E, #00D26A);
+      border-radius: 10px;
+      transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .pill-counter-right {
+      background: #00D26A;
+      color: #FFF;
+      font-weight: 900;
+      font-size: 0.95rem;
+      padding: 5px 14px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 3px 0 #00A853;
+    }
+
+    .warning-box {
+      background: #FFF9E6;
+      border: 3px dashed #FDCB6E;
+      border-left: 8px solid #F39C12;
+      border-radius: 20px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      box-shadow: 0 6px 18px rgba(243, 156, 18, 0.12);
+    }
+    .warning-title {
+      font-size: 1.05rem;
+      font-weight: 900;
+      color: #D35400;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+    }
+    .warning-text {
+      font-size: 0.95rem;
+      color: #4A3E1F;
+      line-height: 1.55;
+      font-weight: 700;
+    }
+    .warning-subtext {
+      margin-top: 6px;
+      font-size: 0.88rem;
+      color: #C0392B;
+      font-weight: 800;
+    }
+
+    /* Section Header Banner */
+    .section-banner {
+      background: linear-gradient(90deg, #7952B3, #0984E3);
+      color: #FFFFFF;
+      border-radius: 22px;
+      padding: 16px 22px;
+      margin: 28px 0 20px 0;
+      box-shadow: 0 8px 20px rgba(9, 132, 227, 0.22);
+      font-weight: 900;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .quiz-card {
+      background: #FFFFFF;
+      border-radius: 26px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      border: 3px solid #F0F4F8;
+      position: relative;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .quiz-card:hover {
+      box-shadow: 0 14px 38px rgba(116, 185, 255, 0.2);
+    }
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .q-number-pill {
+      background: #0984E3;
+      color: #FFFFFF;
+      font-weight: 900;
+      font-size: 0.9rem;
+      padding: 5px 14px;
+      border-radius: 20px;
+      box-shadow: 0 3px 0 #0767B1;
+    }
+    .q-tag-pill {
+      background: #FFF3E0;
+      color: #E65100;
+      font-weight: 800;
+      font-size: 0.82rem;
+      padding: 4px 12px;
+      border-radius: 16px;
+      border: 1px solid #FFE0B2;
+    }
+    .q-text {
+      font-size: 1.13rem;
+      font-weight: 800;
+      color: #2D3436;
+      line-height: 1.55;
+      margin-bottom: 18px;
+    }
+
+    .options-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    @media (min-width: 600px) {
+      .options-grid.grid-2col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .option-btn {
+      position: relative;
+      background: #FFFFFF;
+      border: 2.5px solid #E2E8F0;
+      border-radius: 18px;
+      padding: 13px 16px;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #2D3436;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 5px 0 #CBD5E1;
+      transition: all 0.15s ease-in-out;
+      text-align: left;
+    }
+    .option-btn:hover:not(:disabled) {
+      transform: translateY(-2px) scale(1.015);
+      border-color: #0984E3;
+      box-shadow: 0 7px 0 #0767B1;
+      background: #F8FBFE;
+    }
+    .option-btn:active:not(:disabled) {
+      transform: translateY(4px);
+      box-shadow: 0 1px 0 #CBD5E1;
+    }
+    .opt-key {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 11px;
+      background: #F1F2F6;
+      color: #57606F;
+      font-weight: 900;
+      font-size: 0.92rem;
+      flex-shrink: 0;
+    }
+
+    .option-btn.selected-correct {
+      background: #E8F8F0 !important;
+      border-color: var(--correct-green) !important;
+      color: #0E6251 !important;
+      box-shadow: 0 5px 0 #00A853 !important;
+    }
+    .option-btn.selected-correct .opt-key {
+      background: var(--correct-green) !important;
+      color: #FFFFFF !important;
+    }
+
+    .option-btn.selected-wrong {
+      background: #FFEAEA !important;
+      border-color: var(--wrong-red) !important;
+      color: #922B21 !important;
+      box-shadow: 0 5px 0 #D63031 !important;
+      animation: shakeAnim 0.4s ease-in-out;
+    }
+    .option-btn.selected-wrong .opt-key {
+      background: var(--wrong-red) !important;
+      color: #FFFFFF !important;
+    }
+
+    .option-btn.show-truth {
+      border-color: var(--correct-green) !important;
+      background: #F0FFF4 !important;
+      box-shadow: 0 4px 0 #00A853 !important;
+    }
+    .option-btn.show-truth .opt-key {
+      background: #00BA66 !important;
+      color: #FFF !important;
+    }
+
+    @keyframes shakeAnim {
+      0%, 100% { transform: translateX(0); }
+      20% { transform: translateX(-8px); }
+      40% { transform: translateX(8px); }
+      60% { transform: translateX(-6px); }
+      80% { transform: translateX(6px); }
+    }
+
+    .explanation-container {
+      display: none;
+      margin-top: 20px;
+      background: #FFFFFF;
+      border: 2px dashed #FFB8B8;
+      border-radius: 22px;
+      padding: 20px;
+      position: relative;
+      animation: slideInDown 0.35s ease;
+      box-shadow: 0 6px 20px rgba(255, 94, 98, 0.08);
+    }
+    @keyframes slideInDown {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .exp-title-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1.12rem;
+      font-weight: 900;
+      color: #FF5E62;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .exp-trans-box {
+      background: #FFFDF0;
+      border-left: 6px solid #FDCB6E;
+      border-radius: 16px;
+      padding: 12px 18px;
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: #2D3436;
+      line-height: 1.5;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .exp-section-title {
+      font-weight: 900;
+      font-size: 0.98rem;
+      color: #2D3436;
+      margin-bottom: 10px;
+    }
+
+    .exp-grid-cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    @media (min-width: 620px) {
+      .exp-grid-cards {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .exp-card-item {
+      background: #FFFFFF;
+      border: 1.5px solid #E2E8F0;
+      border-radius: 14px;
+      padding: 10px 14px;
+      font-size: 0.92rem;
+      line-height: 1.45;
+    }
+    .exp-card-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 4px;
+    }
+    .card-word {
+      font-weight: 800;
+      font-size: 1rem;
+    }
+    .card-word.word-wrong { color: #0984E3; }
+    .card-word.word-correct { color: #00BA66; }
+
+    .badge-pill {
+      font-size: 0.76rem;
+      font-weight: 800;
+      padding: 2px 9px;
+      border-radius: 10px;
+    }
+    .badge-pill-wrong { background: #F1F2F6; color: #57606F; }
+    .badge-pill-correct { background: #E8F8F0; color: #00A853; border: 1px solid #A3E9C3; }
+    .card-meaning { color: #B33939; font-weight: 700; font-size: 0.86rem; }
+
+    .exp-block {
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+      line-height: 1.55;
+    }
+    .rule-tag {
+      background: #FFF3CD;
+      color: #856404;
+      font-weight: 800;
+      padding: 2px 10px;
+      border-radius: 10px;
+      margin-right: 6px;
+      display: inline-block;
+    }
+    .highlight-green-tag {
+      background: #D4EDDA;
+      color: #155724;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 8px;
+      display: inline-block;
+    }
+    .wrong-key-pill {
+      background: #FFEAEA;
+      color: #D63031;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 8px;
+      margin-right: 4px;
+      display: inline-block;
+    }
+
+    .submit-area {
+      text-align: center;
+      margin: 35px 0 60px 0;
+    }
+    .btn-submit-main {
+      background: #00D26A;
+      color: #FFFFFF;
+      font-size: 1.3rem;
+      font-weight: 900;
+      padding: 16px 48px;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 8px 0 #00A853, 0 14px 25px rgba(0, 210, 106, 0.4);
+      transition: all 0.15s ease;
+    }
+    .btn-submit-main:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 11px 0 #00A853, 0 18px 30px rgba(0, 210, 106, 0.45);
+    }
+    .btn-submit-main:active {
+      transform: translateY(4px);
+      box-shadow: 0 3px 0 #00A853;
+    }
+
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(45, 52, 54, 0.75);
+      backdrop-filter: blur(8px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      padding: 16px;
+    }
+    .modal-overlay.active { display: flex; }
+    .score-modal {
+      background: #FFFFFF;
+      width: 100%;
+      max-width: 520px;
+      border-radius: 28px;
+      padding: 30px;
+      text-align: center;
+      border: 4px solid #0984E3;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+    }
+    .modal-trophy { font-size: 4rem; margin-bottom: 10px; }
+    .score-huge { font-size: 3.2rem; font-weight: 900; color: #0984E3; margin: 10px 0; }
+    .score-fraction { font-size: 1.2rem; color: #636E72; font-weight: 800; }
+    .feedback-box {
+      background: #F8F9FE;
+      border: 2px dashed #0984E3;
+      border-radius: 18px;
+      padding: 16px 20px;
+      margin: 20px 0;
+      text-align: left;
+    }
+    .feedback-teacher { font-weight: 900; color: #0984E3; margin-bottom: 8px; }
+    .feedback-quote { font-size: 1.02rem; color: #2D3436; line-height: 1.55; font-weight: 700; font-style: italic; }
+    .btn-modal-close {
+      background: #0984E3;
+      color: #FFFFFF;
+      font-size: 1.1rem;
+      font-weight: 800;
+      padding: 14px 34px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 5px 0 #0767B1;
+      margin: 6px;
+    }
+
+    #confetti-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 10000;
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="confetti-canvas"></canvas>
+
+  <div class="bg-elements" id="bgElements"></div>
+  <div class="city-skyline"></div>
+  <div class="bottom-road">
+    <div class="road-curb"></div>
+    <div class="road-lines"></div>
+  </div>
+
+  <div class="app-container">
+
+    <div class="top-announcement">
+      <div class="announcement-text">
+        <span>👩‍🏫 Giáo viên tạo: <strong>Ms Lê Hằng English</strong></span>
+        <span class="teacher-badge">Master of English</span>
+      </div>
+      <div style="font-size: 0.82rem; color: #FF5E62; font-weight: 800;">
+        ⚡ C. PRACTICE - THE GENERATION GAP (122 CÂU)
+      </div>
+    </div>
+
+    <div class="unit-hero-card">
+      <div>
+        <div class="unit-badge">
+          <span>👨‍👩‍👧‍👦 CHUYÊN ĐỀ KHOẢNG CÁCH THẾ HỆ · EXERCISES 1 - 2 - 3</span>
+        </div>
+        <h1 class="unit-title">Tổng Ôn Tập The Generation Gap (122 Câu)</h1>
+        <div class="unit-subtitle">
+          Ex 1: Từ vựng & Ngữ pháp (88 câu) · Ex 2: Modal Verbs (25 câu) · Ex 3: Sắp xếp hội thoại/văn bản (9 câu)
+        </div>
+      </div>
+      <div class="unit-icon-box">
+        🌉
+      </div>
+    </div>
+
+    <!-- Filter Navigation -->
+    <div class="filter-nav">
+      <button class="filter-btn active" onclick="filterSection('all', this)">Tất cả (122 câu)</button>
+      <button class="filter-btn" onclick="filterSection('ex1', this)">Exercise 1: Vocabulary & Grammar (88 câu)</button>
+      <button class="filter-btn" onclick="filterSection('ex2', this)">Exercise 2: Modal Verbs (25 câu)</button>
+      <button class="filter-btn" onclick="filterSection('ex3', this)">Exercise 3: Arrangement (9 câu)</button>
+    </div>
+
+    <!-- Top Sticky Bar -->
+    <div class="top-stats-bar">
+      <div class="pill-counter-left">
+        <span>⭐</span>
+        <span id="correctScore">0</span><span>/122</span>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill" id="progressBar"></div>
+      </div>
+      <div class="pill-counter-right">
+        <span id="answeredCount">0</span><span>/122</span>
+      </div>
+    </div>
+
+    <!-- Urgent Warning Box -->
+    <div class="warning-box">
+      <div class="warning-title">
+        <span>⚠️ LỜI NHẮC CỰC KỲ QUAN TRỌNG ⚠️</span>
+      </div>
+      <div class="warning-text">
+        Chỉ có đọc kỹ giải thích ngay sau mỗi câu, sau đó ghi lại từ vựng/cấu trúc mới vào vở để học thì mới thực sự giỏi lên.
+      </div>
+      <div class="warning-subtext">
+        👉 Làm cho xong mà không đọc giải thích hay đọc qua loa không ghi chép thì chỉ tốn thời gian vô ích!<br>
+        👇 <strong>Kéo tới đâu, làm tới đó! *</strong>
+      </div>
+    </div>
+
+    <div id="quizContainer"></div>
+
+    <div class="submit-area">
+      <button class="btn-submit-main" onclick="calculateAndShowResult()">
+        🎉 NỘP BÀI & XEM TỔNG KẾT 🎉
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Score Modal Popup -->
+  <div class="modal-overlay" id="scoreModal">
+    <div class="score-modal">
+      <div class="modal-trophy" id="modalTrophy">🏆</div>
+      <h2 style="color: #2D3436; font-size: 1.5rem; font-weight: 900;">KẾT QUẢ BÀI THI</h2>
+      <div class="score-huge" id="modalPercent">100%</div>
+      <div class="score-fraction" id="modalFraction">Đúng 122 / 122 câu</div>
+
+      <div class="feedback-box">
+        <div class="feedback-teacher">
+          <span>👩‍🏫 Lời nhận xét từ <strong>Ms Lê Hằng English</strong>:</span>
+        </div>
+        <div class="feedback-quote" id="modalTeacherQuote">
+          "Làm tốt lắm, con cố gắng ring điểm 10 ở lần sau nha!"
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+        <button class="btn-modal-close" onclick="closeModal()">Đóng & Xem lại bài</button>
+        <button class="btn-modal-close" style="background: #00C9A7; box-shadow: 0 5px 0 #009688;" onclick="restartQuiz()">Làm lại bài thi 🔄</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+    function playDing() {
+      if (audioCtx.state === 'suspended') audioCtx.resume();
+      const now = audioCtx.currentTime;
+      const osc1 = audioCtx.createOscillator();
+      const gain1 = audioCtx.createGain();
+      osc1.type = 'triangle';
+      osc1.frequency.setValueAtTime(659.25, now);
+      gain1.gain.setValueAtTime(0.25, now);
+      gain1.gain.exponentialRampToValueAtTime(0.001, now + 0.35);
+      osc1.connect(gain1);
+      gain1.connect(audioCtx.destination);
+      osc1.start(now);
+      osc1.stop(now + 0.35);
+
+      const osc2 = audioCtx.createOscillator();
+      const gain2 = audioCtx.createGain();
+      osc2.type = 'sine';
+      osc2.frequency.setValueAtTime(987.77, now + 0.1);
+      gain2.gain.setValueAtTime(0.3, now + 0.1);
+      gain2.gain.exponentialRampToValueAtTime(0.001, now + 0.6);
+      osc2.connect(gain2);
+      gain2.connect(audioCtx.destination);
+      osc2.start(now + 0.1);
+      osc2.stop(now + 0.6);
+    }
+
+    function playWrongSound() {
+      if (audioCtx.state === 'suspended') audioCtx.resume();
+      const now = audioCtx.currentTime;
+      [320, 260, 210].forEach((freq, i) => {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'sawtooth';
+        osc.frequency.setValueAtTime(freq, now + i * 0.14);
+        gain.gain.setValueAtTime(0.2, now + i * 0.14);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + (i + 1) * 0.14);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start(now + i * 0.14);
+        osc.stop(now + (i + 1) * 0.14);
+      });
+    }
+
+    const canvas = document.getElementById('confetti-canvas');
+    const ctx = canvas.getContext('2d');
+    let confettiParticles = [];
+    let isAnimatingConfetti = false;
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    function triggerConfetti(count = 60) {
+      const colors = ['#0984E3', '#FDCB6E', '#00C9A7', '#00D26A', '#FF4757', '#FF9FF3', '#6C5CE7'];
+      for (let i = 0; i < count; i++) {
+        confettiParticles.push({
+          x: window.innerWidth / 2 + (Math.random() - 0.5) * 320,
+          y: window.innerHeight * 0.35 + (Math.random() - 0.5) * 100,
+          w: Math.random() * 10 + 6,
+          h: Math.random() * 8 + 4,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          vx: (Math.random() - 0.5) * 14,
+          vy: Math.random() * -12 - 5,
+          rot: Math.random() * 360,
+          rotSpeed: (Math.random() - 0.5) * 12,
+          gravity: 0.35,
+          opacity: 1
+        });
+      }
+      if (!isAnimatingConfetti) animateConfetti();
+    }
+
+    function animateConfetti() {
+      if (confettiParticles.length === 0) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        isAnimatingConfetti = false;
+        return;
+      }
+      isAnimatingConfetti = true;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let i = confettiParticles.length - 1; i >= 0; i--) {
+        const p = confettiParticles[i];
+        p.x += p.vx;
+        p.y += p.vy;
+        p.vy += p.gravity;
+        p.rot += p.rotSpeed;
+        p.opacity -= 0.012;
+        if (p.opacity <= 0 || p.y > window.innerHeight) {
+          confettiParticles.splice(i, 1);
+          continue;
+        }
+        ctx.save();
+        ctx.translate(p.x, p.y);
+        ctx.rotate((p.rot * Math.PI) / 180);
+        ctx.fillStyle = p.color;
+        ctx.globalAlpha = p.opacity;
+        ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+        ctx.restore();
+      }
+      requestAnimationFrame(animateConfetti);
+    }
+
+    function initBackgroundElements() {
+      const container = document.getElementById('bgElements');
+      const cloudSvg = '<svg width="120" height="70" viewBox="0 0 24 24" fill="%23FFFFFF"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>';
+      for (let i = 0; i < 4; i++) {
+        const cloud = document.createElement('div');
+        cloud.className = 'floating-cloud';
+        cloud.style.top = `${12 + i * 20}%`;
+        cloud.style.animationDuration = `${24 + i * 8}s`;
+        cloud.style.animationDelay = `${i * 6}s`;
+        cloud.innerHTML = cloudSvg;
+        container.appendChild(cloud);
+      }
+    }
+
+    /* COMPACT QUESTION BUILDER */
+    function makeQ(id, sec, label, tag, qText, opts, cor, trans, rule, whyCor, notes, subtext = "") {
+      const keys = ["A", "B", "C", "D"];
+      const options = opts.map((t, idx) => ({ key: keys[idx], text: t }));
+      const analysis = opts.map((t, idx) => ({
+        word: `${keys[idx]}. ${t.length > 36 ? t.slice(0, 36) + '...' : t}`,
+        badge: keys[idx] === cor ? "Đáp án chuẩn" : "Phương án nhiễu",
+        badgeType: keys[idx] === cor ? "correct" : "wrong",
+        note: notes[idx]
+      }));
+      const whyWrong = [];
+      opts.forEach((t, idx) => {
+        if (keys[idx] !== cor) {
+          whyWrong.push({
+            word: `${keys[idx]}. ${t.length > 32 ? t.slice(0, 32) + '...' : t}`,
+            reason: notes[idx]
+          });
+        }
+      });
+      return { id, sec, label, type: tag, question: qText, subtext, options, correct: cor, trans, analysis, whyCorrect: { rule, content: whyCor }, whyWrong };
+    }
+
+    const quizData = [
+      /* ==================== EXERCISE 1 (88 CÂU) ==================== */
+      makeQ(1, "ex1", "Ex1 - Câu 1", "Collocations & Verbs", "Question 1: Why do people ______ over opinions they can't change anyway?", ["have", "argue", "make", "deal"], "B", "Dịch: Tại sao mọi người lại tranh cãi về những quan điểm mà đằng nào họ cũng không thể thay đổi?", "Cấu trúc 'argue over/about sth':", "Động từ <span class='highlight-green-tag'>argue</span> đi với giới từ <b>over/about</b> mang nghĩa tranh cãi về một vấn đề hoặc quan điểm.", ["have không đi với over opinions", "argue over/about: tranh cãi về điều gì", "make không đi với over", "deal đi với with (deal with)"]),
+      makeQ(2, "ex1", "Ex1 - Câu 2", "Vocabulary", "Question 2: Many parents still ______ that children should follow traditional careers like doctor or teacher.", ["hope", "believe", "absorbed", "suggest"], "B", "Dịch: Nhiều bậc phụ huynh vẫn tin rằng con cái nên theo đuổi các nghề nghiệp truyền thống như bác sĩ hoặc giáo viên.", "Cấu trúc 'believe that + S + V':", "Động từ <span class='highlight-green-tag'>believe</span> (tin tưởng, cho rằng) diễn tả niềm tin, quan niệm truyền thống của cha mẹ.", ["hope thường đi với thì tương lai (hope that S + will V)", "believe that: tin rằng, giữ quan điểm rằng", "absorbed là tính từ/V-ed (say mê)", "suggest that S + (should) V mang nghĩa đề xuất giải pháp tức thời"]),
+      makeQ(3, "ex1", "Ex1 - Câu 3", "Collocations", "Question 3: We shouldn't ______ arguments about things we can solve peacefully.", ["take", "make", "have", "do"], "C", "Dịch: Chúng ta không nên có những cuộc cãi vã về những chuyện có thể giải quyết hòa bình.", "Collocation 'have arguments':", "Cụm từ cố định: <span class='highlight-green-tag'>have an argument / have arguments</span> = xảy ra tranh cãi, cãi vã.", ["không dùng take arguments", "không dùng make arguments trong nghĩa cãi nhau đời thường", "have arguments about sth: tranh cãi về điều gì", "không dùng do arguments"]),
+      makeQ(4, "ex1", "Ex1 - Câu 4", "Adjective + Preposition", "Question 4: Her ideas are ______ of what her parents believe about gender roles.", ["involved", "dependent", "independent", "alike"], "C", "Dịch: Quan điểm của cô ấy hoàn toàn độc lập với những gì bố mẹ cô ấy tin tưởng về vai trò giới.", "Cấu trúc 'be independent of sth':", "Tính từ <span class='highlight-green-tag'>independent</span> đi với giới từ <b>of</b>: độc lập, tách biệt khỏi cái gì.", ["involved đi với in (involved in)", "dependent đi với on (dependent on)", "independent of: độc lập với", "alike là tính từ đứng cuối câu, không đi với of"]),
+      makeQ(5, "ex1", "Ex1 - Câu 5", "Compound Nouns", "Question 5: ______ equality is important, but different generations have different ideas about how to make it more normal and accepted in life.", ["Social", "Cultural", "Gender", "Economic"], "C", "Dịch: Bình đẳng giới là rất quan trọng, nhưng các thế hệ khác nhau có những quan niệm khác nhau về cách làm cho nó trở nên bình thường và được chấp nhận.", "Thuật ngữ 'Gender equality':", "Cụm danh từ cố định: <span class='highlight-green-tag'>Gender equality</span> = bình đẳng giới.", ["Social equality: công bằng xã hội (ít gắn trực tiếp với chuẩn mực thế hệ trong bài)", "Cultural: thuộc văn hóa", "Gender equality: bình đẳng giới (thuật ngữ trọng tâm Unit)", "Economic: thuộc kinh tế"]),
+      makeQ(6, "ex1", "Ex1 - Câu 6", "Verb Patterns", "Question 6: My parents ______ me to follow in their footsteps and become a doctor.", ["hope", "forced", "want", "let"], "C", "Dịch: Bố mẹ tôi muốn tôi nối nghiệp họ và trở thành bác sĩ.", "Cấu trúc 'want sb to do sth' ở Hiện tại đơn:", "Động từ <span class='highlight-green-tag'>want</span> đi với <b>O + to-V</b> (want me to follow) và chia ở Hiện tại đơn chỉ mong muốn hiện tại.", ["không có cấu trúc hope sb to do sth", "forced chia ở quá khứ đơn (lệch ngữ cảnh hiện tại become)", "want sb to do sth: muốn ai làm gì", "let sb do sth (nguyên mẫu không to)"]),
+      makeQ(7, "ex1", "Ex1 - Câu 7", "Idioms", "Question 7: She ______ in her mother's footsteps and became a teacher.", ["followed", "looked", "cooked", "took"], "A", "Dịch: Cô ấy đã nối nghiệp mẹ mình và trở thành một giáo viên.", "Thành ngữ 'follow in somebody's footsteps':", "Thành ngữ cố định: <span class='highlight-green-tag'>follow in one's footsteps</span> = nối nghiệp ai, theo bước chân ai.", ["followed in her mother's footsteps: nối nghiệp mẹ", "sai thành ngữ", "sai thành ngữ", "sai thành ngữ"]),
+      makeQ(8, "ex1", "Ex1 - Câu 8", "Collocations", "Question 8: Parents should give ______, not make every decision for their children.", ["permission", "control", "advice", "opinion"], "C", "Dịch: Cha mẹ nên đưa ra lời khuyên, chứ không phải tự quyết định mọi thứ thay cho con cái.", "Collocation 'give advice':", "Danh từ không đếm được <span class='highlight-green-tag'>advice</span> kết hợp với động từ <b>give</b>: <i>give advice</i> (đưa ra lời khuyên).", ["give permission: cho phép (không đối lập trực tiếp với make decision)", "control: sự kiểm soát", "give advice: đưa ra lời khuyên định hướng", "opinion là danh từ đếm được (phải là give opinions / an opinion)"]),
+      makeQ(9, "ex1", "Ex1 - Câu 9", "Word Form", "Question 9: Every ______ faces unique problems that their parents didn't experience.", ["generation", "generations", "generator", "generational"], "A", "Dịch: Mỗi thế hệ đều phải đối mặt với những vấn đề riêng biệt mà cha mẹ họ chưa từng trải qua.", "Quy tắc 'Every + Danh từ đếm được số ít':", "Sau từ hạn định <b>Every</b> bắt buộc là danh từ đếm được số ít chỉ tập hợp người: <span class='highlight-green-tag'>generation</span> (thế hệ).", ["generation (n số ít): thế hệ", "generations (n số nhiều): không đứng sau Every", "generator (n): máy phát điện", "generational (adj): thuộc về thế hệ"]),
+      makeQ(10, "ex1", "Ex1 - Câu 10", "Collocations & Prepositions", "Question 10: Her daily routine ______ of studying, helping at home, and exercising.", ["consists", "contains", "belongs", "refers"], "A", "Dịch: Thói quen sinh hoạt hàng ngày của cô ấy bao gồm việc học tập, phụ giúp việc nhà và tập thể dục.", "Cấu trúc 'consist of sth':", "Động từ <span class='highlight-green-tag'>consists</span> đi kèm giới từ <b>of</b>: <i>consist of</i> (bao gồm, gồm có).", ["consists of: bao gồm", "contains không đi với giới từ of", "belongs đi với to (belong to)", "refers đi với to (refer to)"]),
+      makeQ(11, "ex1", "Ex1 - Câu 11", "Verb Patterns", "Question 11: My parents try ______ how much time I spend on my phone.", ["learning", "to control", "controlling", "to discover"], "B", "Dịch: Bố mẹ tôi cố gắng kiểm soát lượng thời gian tôi sử dụng điện thoại.", "Cấu trúc 'try + to-V' (cố gắng làm gì):", "Cấu trúc <span class='highlight-green-tag'>try to control</span> mang nghĩa cố gắng kiểm soát thời gian dùng điện thoại của con.", ["try + V-ing nghĩa là thử làm gì", "try to control: cố gắng kiểm soát (đúng ngữ cảnh phụ huynh)", "controlling (V-ing) không mang nghĩa nỗ lực kiểm soát", "to discover: khám phá ra (không hợp nghĩa quản lý thời gian)"]),
+      makeQ(12, "ex1", "Ex1 - Câu 12", "Vocabulary", "Question 12: My parents need to ______ someone to look after my grandparents.", ["lose", "play", "gain", "hire"], "D", "Dịch: Bố mẹ tôi cần thuê một người nào đó để chăm sóc ông bà tôi.", "Từ vựng 'hire somebody':", "Động từ <span class='highlight-green-tag'>hire</span> = thuê người làm việc/chăm sóc.", ["lose: làm mất", "play: chơi", "gain: đạt được", "hire sb to do sth: thuê ai làm việc gì"]),
+      makeQ(13, "ex1", "Ex1 - Câu 13", "Vocabulary", "Question 13: Parents worry when their kids ______ too much online and too little in real life.", ["believe", "socialize", "belong", "compete"], "B", "Dịch: Cha mẹ lo lắng khi con cái giao lưu kết bạn quá nhiều trên mạng mà lại quá ít ở ngoài đời thực.", "Từ vựng 'socialize':", "Động từ <span class='highlight-green-tag'>socialize</span> = giao tiếp xã hội, kết bạn, trò chuyện.", ["believe: tin tưởng", "socialize: giao lưu, kết bạn xã hội", "belong: thuộc về", "compete: cạnh tranh"]),
+      makeQ(14, "ex1", "Ex1 - Câu 14", "Word Form", "Question 14: I prefer to work ______, while my dad always says teamwork is better.", ["individualism", "individually", "individual", "individualistic"], "B", "Dịch: Tôi thích làm việc độc lập cá nhân hơn, trong khi bố tôi luôn nói làm việc nhóm tốt hơn.", "Trạng từ bổ nghĩa cho động từ 'work':", "Sau động từ thường <b>work</b> cần một trạng từ chỉ cách thức: <span class='highlight-green-tag'>individually</span> (một cách độc lập, cá nhân), đối lập với <i>teamwork</i>.", ["individualism (n): chủ nghĩa cá nhân", "individually (adv): một cách cá nhân/độc lập", "individual (n/adj): cá nhân", "individualistic (adj): mang tính cá nhân chủ nghĩa"]),
+      makeQ(15, "ex1", "Ex1 - Câu 15", "Vocabulary", "Question 15: We should respect the ______ that have been passed down from the previous generations.", ["family conflicts", "generational differences", "cultural values", "common behaviours"], "C", "Dịch: Chúng ta nên tôn trọng những giá trị văn hóa đã được truyền lại từ các thế hệ đi trước.", "Cụm từ 'cultural values':", "Những gì tốt đẹp được truyền lại từ thế hệ trước (passed down from previous generations) và cần được tôn trọng là <span class='highlight-green-tag'>cultural values</span> (các giá trị văn hóa).", ["family conflicts: xung đột gia đình", "generational differences: khác biệt thế hệ", "cultural values: các giá trị văn hóa truyền thống", "common behaviours: hành vi thông thường"]),
+      makeQ(16, "ex1", "Ex1 - Câu 16", "Phrasal Verbs", "Question 16: Let them ______ out things before judging their choices.", ["go", "try", "do", "act"], "B", "Dịch: Hãy để chúng thử nghiệm mọi thứ trước khi phán xét sự lựa chọn của chúng.", "Phrasal verb 'try out':", "Cụm động từ <span class='highlight-green-tag'>try out</span> = thử nghiệm, trải nghiệm thử điều gì mới.", ["go out: đi ra ngoài", "try out things: thử nghiệm mọi thứ", "do out: không phù hợp", "act out: diễn lại"]),
+      makeQ(17, "ex1", "Ex1 - Câu 17", "Vocabulary", "Question 17: ______ happens differently now; most teens talk through texts and apps.", ["Immigration", "Education", "Socialization", "Parenting"], "C", "Dịch: Việc giao lưu kết bạn xã hội ngày nay diễn ra rất khác; hầu hết thanh thiếu niên trò chuyện qua tin nhắn và ứng dụng.", "Danh từ 'Socialization':", "Vế sau giải thích 'most teens talk through texts and apps' (trò chuyện qua tin nhắn và app), đây chính là hoạt động <span class='highlight-green-tag'>Socialization</span> (giao tiếp/hòa nhập xã hội).", ["Immigration: sự nhập cư", "Education: giáo dục", "Socialization: sự giao tiếp/kết bạn xã hội", "Parenting: việc nuôi dạy con"]),
+      makeQ(18, "ex1", "Ex1 - Câu 18", "Vocabulary", "Question 18: Parents' methods may ______ the needs of modern teenagers.", ["not suit", "belong to", "not adapt to", "force to"], "A", "Dịch: Phương pháp của cha mẹ có thể không phù hợp với nhu cầu của thanh thiếu niên hiện đại.", "Động từ 'suit' (phù hợp với):", "Cấu trúc <span class='highlight-green-tag'>suit the needs of sb</span> = phù hợp, đáp ứng đúng nhu cầu của ai.", ["not suit: không phù hợp với nhu cầu", "belong to: thuộc về", "adapt to thường dùng cho chủ ngữ chỉ người thích nghi với hoàn cảnh", "force sb to do sth: ép ai làm gì"]),
+      makeQ(19, "ex1", "Ex1 - Câu 19", "Passive Voice", "Question 19: He ______ by a company after showing great communication with different generations.", ["hired", "was hired", "hiring", "is hiring"], "B", "Dịch: Anh ấy đã được tuyển dụng bởi một công ty sau khi thể hiện khả năng giao tiếp tuyệt vời với các thế hệ khác nhau.", "Câu bị động thì Quá khứ đơn (Passive Voice):", "Có dấu hiệu <b>by a company</b> (bởi một công ty) nên câu mang nghĩa bị động: <span class='highlight-green-tag'>was hired</span> (đã được thuê/tuyển dụng).", ["hired: chủ động quá khứ (thiếu tân ngữ)", "was hired: bị động quá khứ đơn chuẩn xác", "hiring: V-ing không làm vị ngữ chính", "is hiring: chủ động hiện tại tiếp diễn"]),
+      makeQ(20, "ex1", "Ex1 - Câu 20", "Phrasal Verbs", "Question 20: They ______ online platforms for communication and news.", ["deal with", "consist of", "rely on", "refer to"], "C", "Dịch: Họ dựa vào / phụ thuộc vào các nền tảng trực tuyến để giao tiếp và cập nhật tin tức.", "Cụm động từ 'rely on':", "Cụm động từ <span class='highlight-green-tag'>rely on</span> = tin cậy, dựa vào cái gì để làm gì.", ["deal with: giải quyết vấn đề", "consist of: bao gồm", "rely on: dựa vào, phụ thuộc vào", "refer to: đề cập đến"]),
+      makeQ(21, "ex1", "Ex1 - Câu 21", "Prepositions", "Question 21: When the argument happened, I was already ______ the scene to calm them down.", ["on", "at", "in", "to"], "A", "Dịch: Khi cuộc cãi vã xảy ra, tôi đã có mặt ngay tại hiện trường để làm họ bình tĩnh lại.", "Cụm giới từ cố định 'on the scene':", "Thành ngữ cố định: <span class='highlight-green-tag'>on the scene</span> = có mặt tại hiện trường / nơi xảy ra sự việc.", ["on the scene: có mặt tại nơi xảy ra sự việc", "không dùng at the scene trong thành ngữ này", "in the scene: trong một cảnh phim", "sai giới từ"]),
+      makeQ(22, "ex1", "Ex1 - Câu 22", "Adjectives", "Question 22: My little brother always asks questions and is ______ to find out all the answers.", ["strange", "curious", "experienced", "responsible"], "B", "Dịch: Em trai nhỏ của tôi luôn đặt câu hỏi và rất tò mò muốn tìm ra tất cả các câu trả lời.", "Tính từ 'curious to do sth':", "Người hay đặt câu hỏi (always asks questions) là người có tính tò mò, ham học hỏi: <span class='highlight-green-tag'>curious</span>.", ["strange: kỳ lạ", "curious: tò mò, hiếu kỳ", "experienced: giàu kinh nghiệm", "responsible: có trách nhiệm"]),
+      makeQ(23, "ex1", "Ex1 - Câu 23", "Vocabulary", "Question 23: It is impossible to avoid daily ______ when you live with your extended family.", ["arguments", "views", "attitudes", "characteristics"], "A", "Dịch: Không thể tránh khỏi những cuộc tranh cãi hàng ngày khi bạn sống chung trong một đại gia đình nhiều thế hệ.", "Ngữ cảnh 'avoid daily arguments':", "Khi sống chung nhiều thế hệ, điều khó tránh khỏi (impossible to avoid) là những bất đồng, tranh cãi nhỏ hàng ngày: <span class='highlight-green-tag'>arguments</span>.", ["arguments: những cuộc tranh luận/cãi vã", "views: quan điểm", "attitudes: thái độ", "characteristics: đặc điểm"]),
+      makeQ(24, "ex1", "Ex1 - Câu 24", "Adjective Structures", "Question 24: You're ______ to misunderstand each other if you stop communicating openly.", ["able", "good", "likely", "ready"], "C", "Dịch: Các bạn rất có khả năng sẽ hiểu lầm nhau nếu ngừng giao tiếp cởi mở.", "Cấu trúc 'be likely to do sth':", "Cấu trúc dự đoán khả năng cao sẽ xảy ra: <span class='highlight-green-tag'>be likely to V</span> (có khả năng, dễ dẫn đến việc gì).", ["be able to: có năng lực làm gì (không dùng cho hậu quả tiêu cực misunderstand)", "good đi với at V-ing", "be likely to V: có khả năng cao sẽ xảy ra", "be ready to: sẵn sàng làm gì"]),
+      makeQ(25, "ex1", "Ex1 - Câu 25", "Linking Phrases", "Question 25: ______ doing homework, teenagers must help with household chores every day.", ["In spite of", "In conclusion", "In addition to", "Because of"], "C", "Dịch: Bên cạnh việc làm bài tập về nhà, thanh thiếu niên phải phụ giúp làm việc nhà mỗi ngày.", "Cụm giới từ bổ sung 'In addition to + V-ing':", "Để liệt kê thêm một nghĩa vụ song song với làm bài tập về nhà, ta dùng <span class='highlight-green-tag'>In addition to</span> (Bên cạnh / Ngoài việc...).", ["In spite of: mặc dù", "In conclusion: tóm lại (chỉ đi với mệnh đề)", "In addition to + N/V-ing: bên cạnh việc gì", "Because of: bởi vì"]),
+      makeQ(26, "ex1", "Ex1 - Câu 26", "Collocations & Prepositions", "Question 26: Lack of communication may ______ to serious conflicts between generations.", ["lead", "go", "result", "come"], "A", "Dịch: Sự thiếu giao tiếp có thể dẫn đến những xung đột nghiêm trọng giữa các thế hệ.", "Cấu trúc 'lead to sth':", "Động từ <span class='highlight-green-tag'>lead</span> đi với giới từ <b>to</b>: <i>lead to something</i> = dẫn đến hậu quả gì.", ["lead to sth: dẫn đến điều gì", "go to: đi tới nơi nào", "result đi với in (result in: dẫn đến) hoặc from (result from: bắt nguồn từ)", "come to: đi đến kết luận"]),
+      makeQ(27, "ex1", "Ex1 - Câu 27", "Verbs + Prepositions", "Question 27: It's hard to ______ to old rules when everything around is changing fast.", ["adjust", "adapt", "refer", "belong"], "B", "Dịch: Thật khó để thích nghi với những quy tắc cũ kỹ khi mọi thứ xung quanh đang thay đổi nhanh chóng.", "Cụm từ 'adapt to sth' (thích nghi):", "Trong chương trình Global Success 11 Unit 2, cụm trọng tâm là <span class='highlight-green-tag'>adapt to</span> (thích nghi với hoàn cảnh/quy tắc).", ["adjust thường nhấn mạnh tinh chỉnh kỹ thuật", "adapt to: thích nghi với (từ vựng trọng tâm trong bài)", "refer to: đề cập tới", "belong to: thuộc về"]),
+      makeQ(28, "ex1", "Ex1 - Câu 28", "Word Order", "Question 28: Parents should respect the ______ their children develop as they grow up.", ["different ideas", "views different", "different views", "difference views"], "C", "Dịch: Cha mẹ nên tôn trọng những quan điểm khác biệt mà con cái hình thành khi chúng lớn lên.", "Trật tự Tính từ + Danh từ (Adj + Noun):", "Tính từ <b>different</b> đứng trước danh từ <b>views</b> (quan điểm, góc nhìn): <span class='highlight-green-tag'>different views</span>.", ["ideas ít đi với động từ develop hơn views trong ngữ cảnh thế hệ", "views different: sai vị trí tính từ", "different views: những quan điểm khác nhau (chuẩn Collocation)", "difference views: dùng danh từ difference làm tính từ là sai"]),
+      makeQ(29, "ex1", "Ex1 - Câu 29", "Phrase Order", "Question 29: Her ______ has changed since she started university.", ["attitude family toward traditions", "toward family attitude traditions", "attitude toward family traditions", "toward family attitude traditions"], "C", "Dịch: Thái độ của cô ấy đối với các truyền thống gia đình đã thay đổi kể từ khi cô ấy bắt đầu học đại học.", "Cấu trúc 'attitude toward(s) sth':", "Danh từ chính <b>attitude</b> (thái độ) + giới từ <b>toward</b> (đối với) + cụm danh từ <b>family traditions</b> (truyền thống gia đình): <span class='highlight-green-tag'>attitude toward family traditions</span>.", ["sai trật tự từ", "sai trật tự từ", "attitude toward family traditions: chuẩn cấu trúc", "sai trật tự từ"]),
+      makeQ(30, "ex1", "Ex1 - Câu 30", "Word Form", "Question 30: Being ______ on others can limit your ability to learn and grow.", ["depended", "dependent", "depending", "independence"], "B", "Dịch: Việc phụ thuộc vào người khác có thể hạn chế khả năng học hỏi và trưởng thành của bạn.", "Cấu trúc 'be dependent on sb':", "Sau 'Being' (dạng danh động từ của to be) và trước giới từ <b>on</b>, ta cần tính từ <span class='highlight-green-tag'>dependent</span> (phụ thuộc vào).", ["depended là V-ed", "dependent (adj) on: phụ thuộc vào", "depending chỉ dùng trong cụm depending on (tùy thuộc vào), không đi sau Being", "independence là danh từ (sự độc lập)"]),
+      makeQ(31, "ex1", "Ex1 - Câu 31", "Verb Patterns", "Question 31: Children should learn ______ basic chores when they are young.", ["doing", "do", "to do", "done"], "C", "Dịch: Trẻ em nên học làm các công việc nhà cơ bản khi còn nhỏ.", "Cấu trúc 'learn to do sth':", "Sau động từ <b>learn</b> ta dùng động từ nguyên mẫu có to: <span class='highlight-green-tag'>learn to do</span>.", ["không dùng learn + V-ing", "thiếu giới từ to", "learn to do: học làm việc gì", "done là V3"]),
+      makeQ(32, "ex1", "Ex1 - Câu 32", "Adjective + Preposition", "Question 32: He's ______ to online games, which causes conflict between him and his parents.", ["addicted", "influenced", "absorbed", "dependent"], "A", "Dịch: Cậu ấy bị nghiện trò chơi trực tuyến, điều này gây ra xung đột giữa cậu và bố mẹ.", "Cấu trúc 'be addicted to sth':", "Đi với giới từ <b>to</b> phía sau để chỉ việc nghiện game là tính từ <span class='highlight-green-tag'>addicted</span> (<i>be addicted to</i>).", ["addicted to: nghiện cái gì", "influenced đi với by", "absorbed đi với in (absorbed in)", "dependent đi với on (dependent on)"]),
+      makeQ(33, "ex1", "Ex1 - Câu 33", "Adjective + Preposition", "Question 33: Teenagers can be ______ in music or books, which parents may not understand.", ["related", "involved", "absorbed", "based"], "C", "Dịch: Thanh thiếu niên có thể say sưa/đắm chìm vào âm nhạc hoặc sách truyện, điều mà cha mẹ có thể không hiểu được.", "Cấu trúc 'be absorbed in sth':", "Cụm từ cố định: <span class='highlight-green-tag'>be absorbed in something</span> = say mê, mải mê, đắm chìm vào cái gì.", ["related đi với to", "involved in: tham gia vào hoạt động/vụ việc", "absorbed in: say mê, đắm chìm vào (âm nhạc, sách)", "based đi với on"]),
+      makeQ(34, "ex1", "Ex1 - Câu 34", "Verb + Preposition", "Question 34: Teenagers don't always worry ______ the consequences of their online actions.", ["for", "about", "on", "to"], "B", "Dịch: Thanh thiếu niên không phải lúc nào cũng lo lắng về hậu quả từ những hành động trên mạng của mình.", "Cấu trúc 'worry about sth':", "Động từ <b>worry</b> đi kèm giới từ <span class='highlight-green-tag'>about</span> (lo lắng về điều gì).", ["sai giới từ", "worry about: lo lắng về", "sai giới từ", "sai giới từ"]),
+      makeQ(35, "ex1", "Ex1 - Câu 35", "Noun Phrases", "Question 35: Listening to each other's ______ helps reduce conflict in families.", ["hold views about", "suit your need", "point of view", "share your views"], "C", "Dịch: Lắng nghe quan điểm/góc nhìn của nhau giúp giảm bớt xung đột trong gia đình.", "Sở hữu cách 'each other's + Noun':", "Sau sở hữu cách <b>each other's</b> bắt buộc phải là một danh từ/cụm danh từ: <span class='highlight-green-tag'>point of view</span> (quan điểm, góc nhìn).", ["hold views là cụm động từ", "suit your need là cụm động từ", "point of view (n): quan điểm, góc nhìn", "share your views là cụm động từ"]),
+      makeQ(36, "ex1", "Ex1 - Câu 36", "Collocations", "Question 36: ______ conflict often comes from differences in lifestyle and communication.", ["Generational", "Behavioral", "Economic", "Personal"], "A", "Dịch: Xung đột thế hệ thường bắt nguồn từ những khác biệt trong lối sống và cách giao tiếp.", "Cụm danh từ 'Generational conflict':", "Xung đột xuất phát từ sự khác biệt lối sống giữa các thế hệ được gọi là <span class='highlight-green-tag'>Generational conflict</span> (xung đột thế hệ).", ["Generational conflict: xung đột thế hệ", "Behavioral: thuộc hành vi", "Economic: thuộc kinh tế", "Personal: cá nhân"]),
+      makeQ(37, "ex1", "Ex1 - Câu 37", "Vocabulary", "Question 37: Social media can generate both understanding and misunderstanding between ______.", ["beliefs", "values", "generations", "genders"], "C", "Dịch: Mạng xã hội có thể tạo ra cả sự thấu hiểu lẫn sự hiểu lầm giữa các thế hệ.", "Ngữ cảnh giao tiếp giữa con người:", "Sự thấu hiểu và hiểu lầm (understanding and misunderstanding) diễn ra giữa các nhóm người thuộc các <span class='highlight-green-tag'>generations</span> (các thế hệ).", ["beliefs: niềm tin (vật vô tri không thể hiểu nhau)", "values: giá trị", "generations: các thế hệ", "genders: giới tính (không phải trọng tâm của mạng xã hội trong bài)"]),
+      makeQ(38, "ex1", "Ex1 - Câu 38", "Verb Patterns", "Question 38: Parents shouldn't force their kids ______ traditional jobs.", ["to choosing", "choosign", "to choose", "choose"], "C", "Dịch: Cha mẹ không nên ép buộc con cái chọn những công việc truyền thống.", "Cấu trúc 'force sb to do sth':", "Động từ <b>force</b> đi với tân ngữ + <b>to-V</b>: <span class='highlight-green-tag'>to choose</span>.", ["sai dạng to V-ing", "sai chính tả và ngữ pháp", "force sb to choose: ép ai chọn", "thiếu giới từ to"]),
+      makeQ(39, "ex1", "Ex1 - Câu 39", "Verbs", "Question 39: Parents and children often ______ in how they define success or happiness.", ["divide", "differ", "depend", "change"], "B", "Dịch: Cha mẹ và con cái thường khác nhau trong cách họ định nghĩa về sự thành công hay hạnh phúc.", "Cấu trúc 'differ in sth':", "Động từ <span class='highlight-green-tag'>differ</span> đi với giới từ <b>in</b>: <i>differ in something</i> = khác biệt về mặt nào đó.", ["divide: phân chia", "differ in sth: khác nhau ở điểm nào", "depend đi với on", "change: thay đổi"]),
+      makeQ(40, "ex1", "Ex1 - Câu 40", "Word Form", "Question 40: The biggest ______ is how each generation uses time and technology.", ["believe", "experience", "difference", "attitude"], "C", "Dịch: Sự khác biệt lớn nhất là cách mỗi thế hệ sử dụng thời gian và công nghệ.", "Danh từ 'difference':", "Sau tính từ so sánh nhất 'The biggest' cần danh từ chỉ sự khác biệt giữa các thế hệ: <span class='highlight-green-tag'>difference</span>.", ["believe là động từ", "experience: trải nghiệm", "The biggest difference: sự khác biệt lớn nhất", "attitude: thái độ"]),
+      makeQ(41, "ex1", "Ex1 - Câu 41", "Word Form", "Question 41: Their opinions are ______, but they still respect each other deeply.", ["behavior", "cultural", "different", "confident"], "C", "Dịch: Quan điểm của họ rất khác nhau, nhưng họ vẫn tôn trọng nhau sâu sắc.", "Tính từ bổ ngữ cho 'opinions':", "Vế sau có liên từ tương phản <b>but</b> (nhưng vẫn tôn trọng nhau), suy ra quan điểm của họ trái ngược/khác nhau: <span class='highlight-green-tag'>different</span>.", ["behavior là danh từ", "cultural: thuộc văn hóa", "different (adj): khác nhau", "confident: tự tin (opinions không thể tự tin)"]),
+      makeQ(42, "ex1", "Ex1 - Câu 42", "Prepositions", "Question 42: Teenagers often have arguments ______ their parents about screen time.", ["to", "on", "for", "with"], "D", "Dịch: Thanh thiếu niên thường xuyên có những cuộc tranh cãi với bố mẹ về thời gian sử dụng màn hình.", "Cấu trúc 'have arguments with sb about sth':", "Tranh cãi <b>với ai</b> dùng giới từ <span class='highlight-green-tag'>with</span> (<i>have arguments with somebody about something</i>).", ["sai giới từ", "sai giới từ", "sai giới từ", "have arguments with sb: tranh cãi với ai"]),
+      makeQ(43, "ex1", "Ex1 - Câu 43", "Vocabulary", "Question 43: Parents often complain about their children's ______ at school or at home.", ["gender", "value", "behavior", "experience"], "C", "Dịch: Cha mẹ thường phàn nàn về hành vi cư xử của con cái ở trường hoặc ở nhà.", "Từ vựng 'behavior' (hành vi/cách cư xử):", "Điều mà phụ huynh thường phàn nàn về con cái ở trường hoặc ở nhà là <span class='highlight-green-tag'>behavior</span> (hành vi, thái độ cư xử).", ["gender: giới tính", "value: giá trị", "behavior: hành vi, cách cư xử", "experience: kinh nghiệm"]),
+      makeQ(44, "ex1", "Ex1 - Câu 44", "Possessive Noun", "Question 44: In a nuclear family, decisions are made faster but without ______.", ["elders experience", "experience's elders", "elders' experience", "elders of experience"], "C", "Dịch: Trong gia đình hạt nhân, các quyết định được đưa ra nhanh hơn nhưng lại thiếu đi kinh nghiệm của người lớn tuổi.", "Sở hữu cách với danh từ số nhiều có -s:", "Danh từ số nhiều <b>elders</b> (những người lớn tuổi) khi lập sở hữu cách chỉ cần thêm dấu phẩy trên <b>'</b>: <span class='highlight-green-tag'>elders' experience</span> (kinh nghiệm của những người lớn tuổi).", ["thiếu dấu sở hữu cách", "ngược trật tự sở hữu", "elders' experience: chuẩn ngữ pháp sở hữu cách", "sai cấu trúc"]),
+      makeQ(45, "ex1", "Ex1 - Câu 45", "Collocations", "Question 45: Parents usually hold strong ______ about their children's future.", ["behaviors", "believes", "views", "arguments"], "C", "Dịch: Cha mẹ thường giữ những quan điểm cứng rắn/mạnh mẽ về tương lai của con cái.", "Collocation 'hold strong views about sth':", "Cụm từ cố định: <span class='highlight-green-tag'>hold strong views about/on sth</span> = có quan điểm rất kiên quyết, mạnh mẽ về việc gì.", ["behaviors: hành vi", "believes là động từ (danh từ phải là beliefs)", "hold strong views: giữ quan điểm mạnh mẽ", "arguments: cuộc cãi vã"]),
+      makeQ(46, "ex1", "Ex1 - Câu 46", "Vocabulary", "Question 46: Talking openly can prevent ______ and build stronger family bonds.", ["tradition", "opinion", "career", "conflict"], "D", "Dịch: Trò chuyện cởi mở có thể ngăn ngừa xung đột và xây dựng sự gắn kết gia đình bền chặt hơn.", "Kết hợp 'prevent conflict':", "Trò chuyện cởi mở giúp ngăn chặn những bất đồng, mâu thuẫn: <span class='highlight-green-tag'>prevent conflict</span>.", ["tradition: truyền thống", "opinion: ý kiến", "career: sự nghiệp", "conflict: sự xung đột, mâu thuẫn"]),
+      makeQ(47, "ex1", "Ex1 - Câu 47", "Word Form", "Question 47: Different generations have different ______, especially in how they handle pressure.", ["characteristic", "characteristics", "characterize", "characteristically"], "B", "Dịch: Các thế hệ khác nhau có những đặc điểm khác nhau, đặc biệt là trong cách họ đối mặt với áp lực.", "Danh từ đếm được số nhiều sau 'different':", "Sau tính từ <b>different</b> (nhiều, khác nhau) cần danh từ đếm được ở dạng số nhiều: <span class='highlight-green-tag'>characteristics</span> (những đặc điểm).", ["characteristic (n số ít)", "characteristics (n số nhiều): những đặc điểm", "characterize (v): biểu thị đặc điểm", "characteristically (adv): một cách đặc trưng"]),
+      makeQ(48, "ex1", "Ex1 - Câu 48", "Vocabulary", "Question 48: Parents should teach life skills, not just focus on academic ______.", ["qualities", "behaviors", "devices", "permissions"], "A", "Dịch: Cha mẹ nên dạy kỹ năng sống, chứ không chỉ tập trung vào các phẩm chất/năng lực học thuật.", "Từ vựng 'academic qualities':", "Trong 4 lựa chọn, chỉ có <span class='highlight-green-tag'>qualities</span> (phẩm chất, năng lực) ghép được với tính từ <i>academic</i>.", ["academic qualities: phẩm chất/năng lực học tập", "behaviors: hành vi", "devices: thiết bị", "permissions: sự cho phép"]),
+      makeQ(49, "ex1", "Ex1 - Câu 49", "Vocabulary", "Question 49: Now, both parents can be ______ and share household chores equally.", ["believers", "earners", "breadwinners", "influences"], "C", "Dịch: Ngày nay, cả bố và mẹ đều có thể là trụ cột kiếm tiền nuôi gia đình và chia sẻ việc nhà công bằng.", "Từ vựng 'breadwinners':", "Thuật ngữ chỉ người lao động chính kiếm tiền nuôi gia đình là <span class='highlight-green-tag'>breadwinners</span>.", ["believers: tín đồ", "earners thường phải có tính từ ghép như wage-earners", "breadwinners: trụ cột kinh tế gia đình", "influences: sự ảnh hưởng"]),
+      makeQ(50, "ex1", "Ex1 - Câu 50", "Adjectives", "Question 50: Misunderstandings between generations are more ______ than people think.", ["behavioral", "common", "competitive", "limited"], "B", "Dịch: Những sự hiểu lầm giữa các thế hệ phổ biến hơn nhiều so với những gì mọi người nghĩ.", "Tính từ 'common' (phổ biến, thường gặp):", "Hiểu lầm giữa các thế hệ là chuyện rất thường gặp: <span class='highlight-green-tag'>more common than people think</span>.", ["behavioral: thuộc hành vi", "common: phổ biến, thường xuyên xảy ra", "competitive: cạnh tranh", "limited: hạn chế"]),
+      makeQ(51, "ex1", "Ex1 - Câu 51", "Vocabulary", "Question 51: My grandmother's ______ helped me become more patient and respectful to others.", ["influence", "rule", "view", "control"], "A", "Dịch: Sự ảnh hưởng của bà tôi đã giúp tôi trở nên kiên nhẫn và biết tôn trọng người khác hơn.", "Từ vựng 'influence' (tầm ảnh hưởng):", "Tấm gương và sự ảnh hưởng tích cực của người bà đã cảm hóa cháu: <span class='highlight-green-tag'>influence</span>.", ["influence: sự ảnh hưởng, tác động tích cực", "rule: quy tắc", "view: quan điểm", "control: sự kiểm soát"]),
+      makeQ(52, "ex1", "Ex1 - Câu 52", "Word Order", "Question 52: ______ can help young people make better life choices.", ["Influential members family", "Family influential members", "Members influential family", "Influential family members"], "D", "Dịch: Những thành viên có tầm ảnh hưởng trong gia đình có thể giúp người trẻ đưa ra những lựa chọn cuộc sống tốt hơn.", "Trật tự cụm danh từ (Adj + Noun Adjunct + Head Noun):", "Tính từ chỉ tính chất <b>Influential</b> (có tầm ảnh hưởng) + danh từ phụ <b>family</b> + danh từ chính <b>members</b>: <span class='highlight-green-tag'>Influential family members</span>.", ["sai trật tự từ", "sai vị trí tính từ Influential", "sai trật tự từ", "Influential family members: chuẩn ngữ pháp"]),
+      makeQ(53, "ex1", "Ex1 - Câu 53", "Vocabulary", "Question 53: Buying second-hand clothes is more ______ than following new fashion trends.", ["traditional", "economical", "digital", "expensive"], "B", "Dịch: Mua quần áo cũ (second-hand) tiết kiệm hơn nhiều so với việc chạy theo các xu hướng thời trang mới.", "Tính từ 'economical' (tiết kiệm):", "Mua đồ second-hand giúp tiết kiệm chi phí hơn: <span class='highlight-green-tag'>economical</span> (tiết kiệm, kinh tế).", ["traditional: truyền thống", "economical: tiết kiệm tiền bạc", "digital: kỹ thuật số", "expensive: đắt đỏ (trái với thực tế mua đồ cũ)"]),
+      makeQ(54, "ex1", "Ex1 - Câu 54", "Word Form", "Question 54: Our family income depends a lot on the country's ______ and job opportunities.", ["economy", "economist", "economics", "economic"], "A", "Dịch: Thu nhập của gia đình chúng tôi phụ thuộc rất nhiều vào nền kinh tế của đất nước và các cơ hội việc làm.", "Danh từ 'economy' (nền kinh tế):", "Sau sở hữu cách <b>the country's</b> (của đất nước) ta cần danh từ chỉ nền kinh tế quốc gia: <span class='highlight-green-tag'>economy</span>.", ["economy (n): nền kinh tế", "economist (n): nhà kinh tế học", "economics (n): môn kinh tế học", "economic (adj): thuộc về kinh tế"]),
+      makeQ(55, "ex1", "Ex1 - Câu 55", "Phrasal Verbs", "Question 55: How do you ______ arguments about school or friends?", ["take away", "rely on", "worry about", "deal with"], "D", "Dịch: Bạn giải quyết/xử lý những cuộc tranh cãi về chuyện trường lớp hay bạn bè như thế nào?", "Phrasal verb 'deal with':", "Cụm động từ <span class='highlight-green-tag'>deal with</span> = giải quyết, đối phó, xử lý vấn đề/cuộc tranh cãi.", ["take away: mang đi", "rely on: dựa vào", "worry about: lo lắng (không hợp với câu hỏi How do you...)", "deal with: giải quyết, xử lý"]),
+      makeQ(56, "ex1", "Ex1 - Câu 56", "Gerund Phrase", "Question 56: Family meals are important for ______ across generations.", ["bonds social building", "bonds building social", "social building bonds", "building social bonds"], "D", "Dịch: Các bữa ăn gia đình rất quan trọng đối với việc xây dựng sự gắn kết xã hội/tình cảm giữa các thế hệ.", "Cấu trúc 'for + V-ing + Adj + Noun':", "Sau giới từ <b>for</b> cần danh động từ <b>building</b> (xây dựng) + tân ngữ <b>social bonds</b> (mối gắn kết): <span class='highlight-green-tag'>building social bonds</span>.", ["sai trật tự từ", "sai trật tự từ", "sai trật tự từ", "building social bonds: chuẩn cấu trúc V-ing + O"]),
+      makeQ(57, "ex1", "Ex1 - Câu 57", "Adjective Structures", "Question 57: Children should be ______ to express their opinions freely.", ["complain", "let", "able", "force"], "C", "Dịch: Trẻ em nên có thể/được phép bày tỏ ý kiến của mình một cách tự do.", "Cấu trúc 'should be able to V':", "Sau 'should be' và trước 'to express', ta dùng tính từ <span class='highlight-green-tag'>able</span> (<i>be able to do sth</i>).", ["complain là động từ nguyên mẫu", "let không dùng bị động với to-V (be allowed to mới đúng)", "be able to V: có thể làm gì", "force là động từ nguyên mẫu"]),
+      makeQ(58, "ex1", "Ex1 - Câu 58", "Compound Nouns", "Question 58: Older people have more ______, but younger people often ignore their advice.", ["generational difference", "social media", "life experience", "household chore"], "C", "Dịch: Người lớn tuổi có nhiều kinh nghiệm sống hơn, nhưng người trẻ thường phớt lờ lời khuyên của họ.", "Cụm danh từ 'life experience':", "Người lớn tuổi đúc kết lời khuyên từ <span class='highlight-green-tag'>life experience</span> (kinh nghiệm sống) phong phú của họ.", ["generational difference: khác biệt thế hệ", "social media: mạng xã hội", "life experience: kinh nghiệm sống", "household chore: việc nhà"]),
+      makeQ(59, "ex1", "Ex1 - Câu 59", "Collocations", "Question 59: Teens should learn to be ______ thinkers, not just follow trends blindly.", ["different", "critical", "traditional", "relaxed"], "B", "Dịch: Thanh thiếu niên nên học cách trở thành những người có tư duy phản biện, chứ không chỉ chạy theo xu hướng một cách mù quáng.", "Thuật ngữ 'critical thinkers':", "Cụm từ cố định: <span class='highlight-green-tag'>critical thinkers</span> = những người có tư duy phản biện, biết phân tích đúng sai thay vì hùa theo đám đông.", ["different: khác nhau", "critical thinkers: người có tư duy phản biện", "traditional: truyền thống", "relaxed: thư giãn"]),
+      makeQ(60, "ex1", "Ex1 - Câu 60", "Noun + Preposition", "Question 60: ______ about new things often causes teens to argue with their elders.", ["Competition", "Curiosity", "Confidence", "Difference"], "B", "Dịch: Sự tò mò về những điều mới mẻ thường khiến thanh thiếu niên tranh luận với người lớn tuổi.", "Cấu trúc 'Curiosity about sth':", "Danh từ đi với giới từ <b>about new things</b> (về những điều mới lạ) chính là <span class='highlight-green-tag'>Curiosity</span> (sự tò mò, hiếu kỳ).", ["Competition: sự cạnh tranh", "Curiosity about sth: sự tò mò về điều gì", "Confidence đi với in", "Difference đi với between/in"]),
+      makeQ(61, "ex1", "Ex1 - Câu 61", "Vocabulary", "Question 61: As digital natives, teens often teach their parents how to use ______.", ["digital native", "screen time", "electronic devices", "digital skills"], "C", "Dịch: Là thế hệ sinh ra trong thời đại số, thanh thiếu niên thường hướng dẫn bố mẹ cách sử dụng các thiết bị điện tử.", "Kết hợp 'use electronic devices':", "Đi với động từ <b>use</b> (sử dụng), cụm danh từ phù hợp nhất là <span class='highlight-green-tag'>electronic devices</span> (các thiết bị điện tử như smartphone, laptop).", ["digital native: người bản địa số", "screen time: thời gian dùng màn hình", "electronic devices: các thiết bị điện tử", "digital skills: kỹ năng số (thường đi với learn/develop)"]),
+      makeQ(62, "ex1", "Ex1 - Câu 62", "Vocabulary", "Question 62: Many young people use ______ to express views their parents may not support.", ["chores", "elders", "social platforms", "culture"], "C", "Dịch: Nhiều người trẻ sử dụng các nền tảng mạng xã hội để bày tỏ những quan điểm mà bố mẹ họ có thể không ủng hộ.", "Cụm danh từ 'social platforms':", "Phương tiện để giới trẻ đăng tải, bày tỏ quan điểm cá nhân là <span class='highlight-green-tag'>social platforms</span> (các nền tảng mạng xã hội).", ["chores: việc nhà", "elders: người lớn tuổi", "social platforms: các nền tảng mạng xã hội", "culture: văn hóa"]),
+      makeQ(63, "ex1", "Ex1 - Câu 63", "Verbs + Prepositions", "Question 63: Parents should ______ with new ways to communicate with their teenage children.", ["value", "experiment", "avoid", "argue"], "B", "Dịch: Cha mẹ nên thử nghiệm những cách thức mới để giao tiếp với con cái ở tuổi dậy thì.", "Cấu trúc 'experiment with sth':", "Động từ <span class='highlight-green-tag'>experiment</span> đi kèm giới từ <b>with</b>: <i>experiment with new ways</i> = thử nghiệm các phương pháp mới.", ["value không đi với with", "experiment with sth: thử nghiệm với cái gì", "avoid + V-ing/N (không đi với with)", "argue with sb (cãi nhau với ai), không phải với new ways"]),
+      makeQ(64, "ex1", "Ex1 - Câu 64", "Adjective + Preposition", "Question 64: I'm ______ in learning about cultural values in different generations.", ["addict", "interested", "involved", "influenced"], "B", "Dịch: Tôi rất quan tâm/hứng thú với việc tìm hiểu các giá trị văn hóa ở các thế hệ khác nhau.", "Cấu trúc 'be interested in + V-ing':", "Cụm tính từ quen thuộc: <span class='highlight-green-tag'>be interested in doing sth</span> = hứng thú, quan tâm đến việc gì.", ["addict là danh từ/động từ", "interested in: quan tâm, thích thú", "involved in: tham gia vào một hoạt động/sự kiện", "influenced đi với by"]),
+      makeQ(65, "ex1", "Ex1 - Câu 65", "Vocabulary", "Question 65: ______ can increase the generation gap due to cultural and language differences.", ["Fashion", "Immigration", "Belief", "Gender"], "B", "Dịch: Việc nhập cư (di cư sang nước khác) có thể làm gia tăng khoảng cách thế hệ do sự khác biệt về văn hóa và ngôn ngữ.", "Ngữ cảnh 'cultural and language differences':", "Khi một gia đình di cư sang quốc gia khác (<span class='highlight-green-tag'>Immigration</span>), con cái hòa nhập ngôn ngữ mới nhanh hơn cha mẹ, dẫn đến bất đồng ngôn ngữ và văn hóa.", ["Fashion: thời trang (không gây bất đồng ngôn ngữ)", "Immigration: sự nhập cư (gây khác biệt văn hóa & ngôn ngữ giữa cha mẹ và con cái)", "Belief: niềm tin", "Gender: giới tính"]),
+      makeQ(66, "ex1", "Ex1 - Câu 66", "Collocations", "Question 66: Traditionally, children had to listen to their elders without ______ too many questions.", ["speaking", "talking", "telling", "asking"], "D", "Dịch: Theo truyền thống, trẻ em phải vâng lời người lớn mà không được hỏi quá nhiều câu hỏi.", "Collocation 'ask questions':", "Đi với tân ngữ <b>questions</b> (câu hỏi) bắt buộc dùng động từ <span class='highlight-green-tag'>asking</span> (<i>ask questions</i>: đặt câu hỏi).", ["speak a language", "talk to sb", "tell a story / tell the truth", "ask questions: đặt câu hỏi"]),
+      makeQ(67, "ex1", "Ex1 - Câu 67", "Verb Patterns", "Question 67: Many parents ______ to understand why their children behave so differently.", ["avoid", "fail", "try", "force"], "B", "Dịch: Nhiều bậc cha mẹ không thể hiểu nổi tại sao con cái họ lại cư xử khác biệt đến vậy.", "Cấu trúc 'fail to do sth' / 'try to do sth':", "Trong ngữ cảnh khoảng cách thế hệ, nhiều bậc phụ huynh cảm thấy bất lực/không thể hiểu nổi hành vi của con (<span class='highlight-green-tag'>fail to understand</span>) hoặc cố gắng tìm hiểu (<span class='highlight-green-tag'>try to understand</span>). Trong bộ đề chuẩn Global Success, câu này kiểm tra cấu trúc <b>fail to understand</b> (không hiểu nổi).", ["avoid đi với V-ing", "fail to understand: không thể hiểu nổi", "try to understand (nếu xét nghĩa tích cực)", "force sb to do sth (cần tân ngữ)"]),
+      makeQ(68, "ex1", "Ex1 - Câu 68", "Possessive & Word Order", "Question 68: My dad doesn't understand ______, but he tries to be open-minded.", ["today's music culture", "today's culture music", "music culture today", "culture music today"], "A", "Dịch: Bố tôi không hiểu văn hóa âm nhạc ngày nay, nhưng ông luôn cố gắng giữ tư duy cởi mở.", "Sở hữu cách với thời gian 'today's + Noun phrase':", "Trạng từ thời gian <b>today</b> lập sở hữu cách <b>today's</b> + danh từ phụ <b>music</b> + danh từ chính <b>culture</b>: <span class='highlight-green-tag'>today's music culture</span> (văn hóa âm nhạc ngày nay).", ["today's music culture: chuẩn ngữ pháp", "ngược danh từ chính culture music", "thiếu sở hữu cách", "sai trật tự từ"]),
+      makeQ(69, "ex1", "Ex1 - Câu 69", "Vocabulary", "Question 69: My grandparents ______ honesty and respect more than anything else.", ["believe", "complain", "value", "force"], "C", "Dịch: Ông bà tôi coi trọng sự trung thực và lòng tôn trọng hơn bất cứ điều gì khác.", "Động từ 'value' (coi trọng, trân quý):", "Động từ <span class='highlight-green-tag'>value</span> + danh từ = đề cao, coi trọng những phẩm chất đạo đức.", ["believe: tin tưởng", "complain đi với about", "value (v): coi trọng, đề cao", "force: ép buộc"]),
+      makeQ(70, "ex1", "Ex1 - Câu 70", "Vocabulary", "Question 70: Parents should teach ______ without forcing them on their children.", ["school schedules", "eating habits", "cultural values", "electronic devices"], "C", "Dịch: Cha mẹ nên truyền dạy các giá trị văn hóa mà không áp đặt chúng lên con cái.", "Ngữ cảnh truyền dạy giá trị truyền thống:", "Đi với động từ <i>teach</i> và cụm <i>without forcing them on their children</i> là <span class='highlight-green-tag'>cultural values</span> (các giá trị văn hóa).", ["school schedules: lịch học ở trường", "eating habits: thói quen ăn uống", "cultural values: các giá trị văn hóa", "electronic devices: thiết bị điện tử"]),
+      makeQ(71, "ex1", "Ex1 - Câu 71", "Vocabulary", "Question 71: My parents expect me to do ______, but they never ask my brother.", ["birthday planning", "household chores", "computer games", "afternoon snacks"], "B", "Dịch: Bố mẹ kỳ vọng tôi phải làm công việc nhà, nhưng họ lại chẳng bao giờ yêu cầu anh/em trai tôi làm.", "Collocation 'do household chores':", "Đi với động từ <b>do</b> trong bối cảnh bất bình đẳng giới trong gia đình là <span class='highlight-green-tag'>household chores</span> (làm việc nhà).", ["birthday planning: lên kế hoạch sinh nhật", "do household chores: làm công việc nhà", "computer games đi với play", "afternoon snacks đi với eat/have"]),
+      makeQ(72, "ex1", "Ex1 - Câu 72", "Word Order", "Question 72: Teenagers often complain about ______ and limited screen time.", ["strict house rules", "rules strict house", "house strict rules", "strict rules house"], "A", "Dịch: Thanh thiếu niên thường phàn nàn về những nội quy gia đình khắt khe và thời gian sử dụng màn hình bị giới hạn.", "Trật tự Adj + Noun Adjunct + Head Noun:", "Tính từ <b>strict</b> (nghiêm khắc) + danh từ phụ <b>house</b> + danh từ chính <b>rules</b>: <span class='highlight-green-tag'>strict house rules</span> (nội quy gia đình nghiêm ngặt).", ["strict house rules: chuẩn trật tự cụm danh từ", "sai trật tự từ", "sai vị trí tính từ strict", "sai trật tự từ"]),
+      makeQ(73, "ex1", "Ex1 - Câu 73", "Adjectives", "Question 73: My mom got ______ when I rudely talked back during a family dinner.", ["believe", "confused", "upset", "limited"], "C", "Dịch: Mẹ tôi đã rất buồn và tức giận khi tôi hỗn láo cãi lại trong bữa tối gia đình.", "Cấu trúc 'get + Adjective' chỉ cảm xúc:", "Khi con cái cãi lại một cách thô lỗ (rudely talked back), người mẹ sẽ cảm thấy buồn bã/tức giận: <span class='highlight-green-tag'>got upset</span>.", ["believe là động từ", "confused: bối rối, khó hiểu", "upset (adj): buồn bực, tức giận", "limited: bị giới hạn"]),
+      makeQ(74, "ex1", "Ex1 - Câu 74", "Collocations", "Question 74: Parents should limit ______, but they also need to give explanations.", ["hairstyle", "screen time", "tradition", "immigration"], "B", "Dịch: Cha mẹ nên giới hạn thời gian sử dụng màn hình, nhưng họ cũng cần đưa ra lời giải thích hợp lý.", "Collocation 'limit screen time':", "Cụm từ cố định trọng tâm Unit 2: <span class='highlight-green-tag'>limit screen time</span> = giới hạn thời gian tiếp xúc màn hình điện tử.", ["hairstyle: kiểu tóc", "limit screen time: giới hạn thời gian dùng thiết bị điện tử", "tradition: truyền thống", "immigration: sự nhập cư"]),
+      makeQ(75, "ex1", "Ex1 - Câu 75", "Passive Voice", "Question 75: My screen time ______ to two hours a day, including schoolwork.", ["is limited", "was hired", "did consist", "permit"], "A", "Dịch: Thời gian sử dụng màn hình của tôi bị giới hạn ở mức hai tiếng mỗi ngày, tính cả việc học.", "Cấu trúc 'be limited to...':", "Chủ ngữ 'My screen time' chịu tác động bị giới hạn ở một mức độ nhất định: <span class='highlight-green-tag'>is limited to</span> (bị giới hạn ở mức...).", ["is limited to: bị giới hạn ở mức", "was hired: được thuê", "did consist: sai nghĩa", "permit: cho phép"]),
+      makeQ(76, "ex1", "Ex1 - Câu 76", "Verbs + Prepositions", "Question 76: Some values still ______ to both old and young people.", ["suit", "belong", "refer", "contain"], "B", "Dịch: Một số giá trị vẫn thuộc về (chung cho) cả người già lẫn người trẻ.", "Cấu trúc 'belong to sb':", "Đi với giới từ <b>to</b> chỉ sự gắn kết, thuộc về cả hai thế hệ là động từ <span class='highlight-green-tag'>belong</span> (<i>belong to</i>).", ["suit không đi với giới từ to", "belong to: thuộc về", "refer to: ám chỉ đến (ít hợp nghĩa với values hơn belong to)", "contain không đi với to"]),
+      makeQ(77, "ex1", "Ex1 - Câu 77", "Vocabulary", "Question 77: My parents don't ______ sleepovers, even when they know my friend's family.", ["try", "let", "permit", "make"], "C", "Dịch: Bố mẹ tôi không cho phép việc ngủ qua đêm nhà bạn, ngay cả khi họ quen biết gia đình bạn tôi.", "Động từ ngoại 'permit + Noun':", "Động từ <span class='highlight-green-tag'>permit</span> nhận trực tiếp danh từ <b>sleepovers</b> làm tân ngữ (<i>permit something</i>: cho phép cái gì).", ["try: thử", "let phải đi với O + V (let me have sleepovers)", "permit + Noun: cho phép điều gì", "make: làm/bắt buộc"]),
+      makeQ(78, "ex1", "Ex1 - Câu 78", "Adverbs", "Question 78: You must ______ follow the house rules or you'll lose your phone.", ["strictly", "rarely", "strongly", "easily"], "A", "Dịch: Con phải tuân thủ nghiêm ngặt các nội quy trong nhà nếu không con sẽ bị tịch thu điện thoại.", "Collocation 'strictly follow rules':", "Trạng từ <span class='highlight-green-tag'>strictly</span> (một cách nghiêm ngặt, tuyệt đối) kết hợp chuẩn xác với động từ <b>follow the rules</b>.", ["strictly follow: tuân thủ nghiêm ngặt", "rarely: hiếm khi (trái nghĩa hoàn toàn)", "strongly: mạnh mẽ (thường đi với believe/recommend)", "easily: dễ dàng"]),
+      makeQ(79, "ex1", "Ex1 - Câu 79", "Phrasal Verbs", "Question 79: What exactly does “freedom” ______ to in your culture?", ["refer", "refer to", "belongs", "suit"], "A", "Dịch: Từ “tự do” chính xác ám chỉ/đề cập đến điều gì trong văn hóa của bạn?", "Cấu trúc câu hỏi với giới từ 'to' ở cuối:", "Trong câu hỏi đã có sẵn giới từ <b>to</b> đứng trước 'in your culture', và đã có trợ động từ <b>does</b> nên chỗ trống chỉ cần động từ nguyên mẫu <span class='highlight-green-tag'>refer</span> (<i>refer to</i>).", ["refer (kết hợp với chữ 'to' có sẵn phía sau)", "refer to: bị thừa chữ 'to' vì sau chỗ trống đã có 'to'", "belongs: sau trợ động từ does không chia -s", "suit không đi với to"]),
+      makeQ(80, "ex1", "Ex1 - Câu 80", "Vocabulary", "Question 80: Teenagers often want more ______, while parents worry about their safety and choices.", ["permission", "freedom", "difference", "hairstyle"], "B", "Dịch: Thanh thiếu niên thường muốn có thêm nhiều sự tự do hơn, trong khi cha mẹ lại lo lắng cho sự an toàn và các lựa chọn của chúng.", "Từ vựng 'want more freedom':", "Mong muốn lớn nhất của tuổi mới lớn đối lập với sự quản lý bảo bọc của cha mẹ là <span class='highlight-green-tag'>freedom</span> (sự tự do).", ["permission: sự xin phép", "freedom: sự tự do", "difference: sự khác biệt", "hairstyle: kiểu tóc"]),
+      makeQ(81, "ex1", "Ex1 - Câu 97a", "Verbs + Prepositions", "Question 81 (Đề đánh số 97a): Parents shouldn't ______ about technology without trying to understand it first.", ["argue", "complain", "believe", "show"], "B", "Dịch: Cha mẹ không nên phàn nàn về công nghệ mà không cố gắng tìm hiểu nó trước.", "Cấu trúc 'complain about sth':", "Động từ <span class='highlight-green-tag'>complain</span> đi với giới từ <b>about</b>: phàn nàn, kêu ca về công nghệ.", ["argue thường dùng khi tranh cãi qua lại giữa 2 người", "complain about sth: phàn nàn về cái gì", "believe đi với in", "show không đi với about"]),
+      makeQ(82, "ex1", "Ex1 - Câu 97b", "Collocations", "Question 82 (Đề đánh số 97b): Older generations often have very ______ about how people should live.", ["common characteristic", "traditional views", "generational conflicts", "cultural values"], "B", "Dịch: Các thế hệ lớn tuổi thường có những quan điểm rất truyền thống về cách mọi người nên sống như thế nào.", "Cụm từ 'traditional views about/on sth':", "Đi với giới từ <b>about how people should live</b> là cụm danh từ <span class='highlight-green-tag'>traditional views</span> (những quan điểm truyền thống).", ["common characteristic thiếu -s", "traditional views about...: những quan điểm truyền thống về...", "generational conflicts: xung đột thế hệ", "cultural values không đi với about how..."]),
+      makeQ(83, "ex1", "Ex1 - Câu 98", "Phrasal Verbs", "Question 83 (Đề đánh số 98): Teenagers want freedom as they ______ and become independent.", ["complain about", "grow up", "take off", "try out"], "B", "Dịch: Thanh thiếu niên muốn có sự tự do khi chúng lớn lên và trở nên tự lập.", "Phrasal verb 'grow up' (lớn lên, trưởng thành):", "Song hành với 'become independent' (trở nên tự lập) là quá trình trưởng thành: <span class='highlight-green-tag'>grow up</span>.", ["complain about: phàn nàn", "grow up: lớn lên, trưởng thành", "take off: cất cánh / cởi đồ", "try out: thử nghiệm"]),
+      makeQ(84, "ex1", "Ex1 - Câu 99", "Idioms & Collocations", "Question 84 (Đề đánh số 99): Educational games can help bridge the ______ between children, parents, and grandparents.", ["nuclear family", "extended family", "common behaviour", "generation gap"], "D", "Dịch: Các trò chơi giáo dục có thể giúp thu hẹp khoảng cách thế hệ giữa con cái, cha mẹ và ông bà.", "Collocation 'bridge the generation gap':", "Cụm từ cố định kinh điển của Unit 2: <span class='highlight-green-tag'>bridge the generation gap</span> = thu hẹp/xóa bỏ khoảng cách thế hệ.", ["nuclear family: gia đình hạt nhân", "extended family: đại gia đình", "common behaviour: hành vi chung", "bridge the generation gap: thu hẹp khoảng cách thế hệ"]),
+      makeQ(85, "ex1", "Ex1 - Câu 100", "Vocabulary", "Question 85 (Đề đánh số 100): Older generations can cope with difficulties because they have ______ many changes in their lives.", ["experienced", "refused", "looked for", "influenced"], "A", "Dịch: Các thế hệ lớn tuổi có thể đương đầu với khó khăn bởi vì họ đã trải qua rất nhiều biến đổi trong cuộc đời.", "Động từ 'experience' (trải qua, nếm trải):", "Ở thì Hiện tại hoàn thành <i>have + V3</i>, động từ <span class='highlight-green-tag'>experienced</span> (đã trải qua nhiều thăng trầm/thay đổi) giải thích vì sao họ dày dạn bản lĩnh.", ["have experienced many changes: đã trải qua nhiều thay đổi", "refused: từ chối", "looked for: tìm kiếm", "influenced: gây ảnh hưởng"]),
+      makeQ(86, "ex1", "Ex1 - Câu 101", "Phrasal Verbs", "Question 86 (Đề đánh số 101): Every generation must ______ struggles to build their own identity.", ["pass over", "go through", "grow up", "bring to"], "B", "Dịch: Mỗi thế hệ đều phải trải qua những cuộc đấu tranh/thử thách để xây dựng bản sắc riêng của mình.", "Phrasal verb 'go through' (trải qua khó khăn):", "Cụm động từ <span class='highlight-green-tag'>go through</span> = trải qua, vượt qua những thử thách, khó khăn (struggles).", ["pass over: bỏ qua", "go through struggles: trải qua những khó khăn/thử thách", "grow up là nội động từ, không nhận tân ngữ struggles", "bring to: mang đến"]),
+      makeQ(87, "ex1", "Ex1 - Câu 102", "Adjectives", "Question 87 (Đề đánh số 102): Gen Zers are very ______ as they always come up with new ideas or things.", ["experienced", "curious", "creative", "traditional"], "C", "Dịch: Thế hệ Gen Z rất sáng tạo vì họ luôn nảy ra những ý tưởng hoặc những điều mới mẻ.", "Tính từ 'creative' (sáng tạo):", "Cụm từ <i>come up with new ideas</i> (nảy ra ý tưởng mới) chính là định nghĩa của tính từ <span class='highlight-green-tag'>creative</span> (sáng tạo).", ["experienced: giàu kinh nghiệm", "curious: tò mò", "creative: sáng tạo (luôn nghĩ ra ý tưởng mới)", "traditional: truyền thống"]),
+      makeQ(88, "ex1", "Ex1 - Câu 103", "Prepositions", "Question 88 (Đề đánh số 103): Teenagers use social media ______ thinking about its negative effects.", ["through", "during", "without", "in conclusion"], "C", "Dịch: Thanh thiếu niên sử dụng mạng xã hội mà không suy nghĩ về những tác động tiêu cực của nó.", "Giới từ 'without + V-ing':", "Để chỉ việc làm gì mà thiếu đi sự cân nhắc, ta dùng <span class='highlight-green-tag'>without + V-ing</span> (mà không...).", ["through: xuyên qua", "during + Noun (không đi với V-ing)", "without thinking: mà không suy nghĩ", "in conclusion: tóm lại"]),
+
+      /* ==================== EXERCISE 2: MODAL VERBS (25 CÂU) ==================== */
+      makeQ(89, "ex2", "Ex2 - Câu 1", "Modal Verbs (Prohibition)", "Question 89 (Exercise 2 - Câu 1): This warning sign indicates that you ______ step on the grass.", ["shouldn't", "mustn't", "don't have to", "ought not to"], "B", "Dịch: Biển cảnh báo này chỉ rõ rằng bạn không được phép giẫm lên cỏ.", "Modal verb 'mustn't' (Cấm đoán theo biển báo/quy định):", "Khi có biển cảnh báo hoặc quy định công cộng (warning sign), ta dùng <span class='highlight-green-tag'>mustn't</span> để diễn tả sự cấm đoán tuyệt đối.", ["shouldn't: lời khuyên nhẹ", "mustn't: cấm đoán theo quy định/biển báo", "don't have to: không cần phải làm", "ought not to: lời khuyên không nên"]),
+      makeQ(90, "ex2", "Ex2 - Câu 2", "Modal Verbs (Strong Duty)", "Question 90 (Ex2 - Câu 2): Parents today believe that children ______ respect their elders at all times.", ["have to", "ought to", "should", "must"], "D", "Dịch: Các bậc cha mẹ ngày nay tin rằng con cái bắt buộc phải tôn trọng người lớn tuổi mọi lúc.", "Modal verb 'must' (Bổn phận chủ quan từ người nói):", "Khi diễn tả niềm tin, quan điểm mạnh mẽ của cha mẹ (Parents believe...) cùng cụm nhấn mạnh <i>at all times</i>, ta dùng <span class='highlight-green-tag'>must</span>.", ["have to: nghĩa vụ khách quan từ hoàn cảnh bên ngoài", "ought to: lời khuyên", "should: lời khuyên", "must: nghĩa vụ/bổn phận mạnh mẽ theo quan niệm của người nói"]),
+      makeQ(91, "ex2", "Ex2 - Câu 3", "Modal Verbs (Lack of Necessity)", "Question 91 (Ex2 - Câu 3): Young people think they ______ follow every tradition their parents value.", ["needn't", "shouldn't", "don't have to", "ought not to"], "C", "Dịch: Người trẻ nghĩ rằng họ không nhất thiết phải làm theo mọi truyền thống mà cha mẹ họ coi trọng.", "Cấu trúc 'don't have to' (Không cần thiết phải làm):", "Giới trẻ cho rằng việc tuân theo tất cả mọi truyền thống là không bắt buộc: <span class='highlight-green-tag'>don't have to</span>.", ["needn't thường dùng cho sự cho phép tức thời", "shouldn't: không nên (mang tính phản đối truyền thống)", "don't have to: không bắt buộc / không nhất thiết phải làm", "ought not to: không nên"]),
+      makeQ(92, "ex2", "Ex2 - Câu 4", "Modal Verbs (Advice)", "Question 92 (Ex2 - Câu 4): Though Anna disagreed with her parents, she ______ stay calm and explain her thoughts clearly.", ["was able to", "had to", "must", "should"], "D", "Dịch: Mặc dù Anna không đồng tình với bố mẹ, cô ấy nên giữ bình tĩnh và giải thích suy nghĩ của mình một cách rõ ràng.", "Modal verb 'should' (Lời khuyên ứng xử đúng đắn):", "Đưa ra lời khuyên về thái độ ứng xử hợp lý khi bất đồng quan điểm với cha mẹ: <span class='highlight-green-tag'>should</span>.", ["was able to: xoay xở làm được", "had to: đã phải làm", "must: bắt buộc ở hiện tại", "should: nên làm gì (lời khuyên)"]),
+      makeQ(93, "ex2", "Ex2 - Câu 5", "Modal Verbs (Needn't)", "Question 93 (Ex2 - Câu 5): – “Should I bring my laptop to the family gathering?” – “No, you ______. We’re just going to talk and eat.”", ["mustn't", "shouldn't", "can't", "needn't"], "D", "Dịch: – “Con có nên mang laptop tới buổi họp mặt gia đình không ạ?” – “Không, con không cần mang đâu. Chúng ta chỉ trò chuyện và ăn uống thôi.”", "Modal verb 'needn't' (Không cần thiết):", "Đáp lại câu hỏi có cần mang đồ theo không khi sự việc đó không cần thiết: <span class='highlight-green-tag'>needn't</span> (= don't have to).", ["mustn't: cấm đoán", "shouldn't: khuyên không nên", "can't: không thể", "needn't: không cần phải làm gì"]),
+      makeQ(94, "ex2", "Ex2 - Câu 6", "Modal Verbs (Advice)", "Question 94 (Ex2 - Câu 6): Children ______ interrupt adults when they are talking. It’s considered rude.", ["don't have to", "shouldn't", "must", "needn't"], "B", "Dịch: Trẻ em không nên ngắt lời người lớn khi họ đang nói chuyện. Điều đó bị coi là bất lịch sự.", "Modal verb 'shouldn't' (Lời khuyên phép lịch sự):", "Khuyên bảo trẻ em về quy tắc ứng xử lịch sự (It's considered rude): <span class='highlight-green-tag'>shouldn't</span>.", ["don't have to: không cần phải", "shouldn't: không nên làm gì", "must: phải (ngược nghĩa)", "needn't: không cần"]),
+      makeQ(95, "ex2", "Ex2 - Câu 7", "Modal Verbs", "Question 95 (Ex2 - Câu 7): You ______ play loud music at night. The neighbors will complain.", ["can't", "mustn't", "don't have to", "shouldn't"], "D", "Dịch: Bạn không nên bật nhạc to vào ban đêm. Hàng xóm sẽ phàn nàn đấy.", "Modal verb 'shouldn't' / 'mustn't':", "Khuyên can hoặc nhắc nhở ai không nên làm việc gây phiền hà cho hàng xóm: <span class='highlight-green-tag'>shouldn't</span> (hoặc <i>mustn't</i> nếu là nội quy khu phố).", ["can't: không thể", "mustn't: cấm theo luật", "don't have to: không cần", "shouldn't: không nên (vì hàng xóm sẽ phàn nàn)"]),
+      makeQ(96, "ex2", "Ex2 - Câu 8", "Modal Verbs (Lack of Necessity)", "Question 96 (Ex2 - Câu 8): Teenagers ______ always agree with their parents, but they should try to listen.", ["mustn't", "shouldn't", "don't have to", "ought to"], "C", "Dịch: Thanh thiếu niên không nhất thiết lúc nào cũng phải đồng ý với cha mẹ, nhưng các em nên cố gắng lắng nghe.", "Cấu trúc 'don't have to always agree':", "Không bắt buộc phải đồng tình 100% trong mọi chuyện: <span class='highlight-green-tag'>don't have to</span>.", ["mustn't: cấm đồng ý (sai nghĩa)", "shouldn't: không nên đồng ý", "don't have to: không nhất thiết phải", "ought to: nên (mâu thuẫn với liên từ but ở vế sau)"]),
+      makeQ(97, "ex2", "Ex2 - Câu 9", "Modal Verbs (Moral Obligation)", "Question 97 (Ex2 - Câu 9): Children ______ respect their elders.", ["might", "must", "can", "ought to"], "D", "Dịch: Trẻ em nên/phải có bổn phận kính trọng người lớn tuổi.", "Modal verb 'ought to' / 'must':", "Diễn tả bổn phận đạo đức tự nhiên trong xã hội: <span class='highlight-green-tag'>ought to</span> (hoặc <i>must</i>).", ["might: có lẽ", "must: bắt buộc", "can: có thể", "ought to: nên/phải (bổn phận đạo đức truyền thống)"]),
+      makeQ(98, "ex2", "Ex2 - Câu 10", "Modal Verbs in the Past (Had to)", "Question 98 (Ex2 - Câu 10): My mother wanted to become a dancer, but she ______ follow in her parents' footsteps and became a medical doctor.", ["had to", "must", "shouldn't", "has to"], "A", "Dịch: Mẹ tôi từng muốn trở thành vũ công, nhưng bà đã phải nối nghiệp bố mẹ mình và trở thành bác sĩ y khoa.", "Quá khứ của must/have to là 'had to':", "Câu đang kể lại sự việc trong quá khứ (<i>wanted... became...</i>), nên bắt buộc dùng dạng quá khứ <span class='highlight-green-tag'>had to</span> (đã phải làm gì).", ["had to: đã phải làm gì trong quá khứ", "must không dùng cho quá khứ", "shouldn't: không nên", "has to: thì hiện tại đơn"]),
+      makeQ(99, "ex2", "Ex2 - Câu 11", "Modal Verbs (School Rules)", "Question 99 (Ex2 - Câu 11): You ______ wear shorts to school. Please put your school uniform on.", ["must", "mustn't", "have to", "don't have to"], "B", "Dịch: Con không được phép mặc quần đùi đến trường. Hãy mặc đồng phục học sinh vào.", "Modal verb 'mustn't' (Cấm đoán theo nội quy nhà trường):", "Mặc quần đùi đi học là vi phạm nội quy nên bị cấm tuyệt đối: <span class='highlight-green-tag'>mustn't</span>.", ["must: bắt buộc mặc (sai nghĩa)", "mustn't: không được phép", "have to: phải", "don't have to: không cần"]),
+      makeQ(100, "ex2", "Ex2 - Câu 12", "Modal Verbs (Lack of Necessity)", "Question 100 (Ex2 - Câu 12): My parents are always open to different views. I ______ agree with their opinions.", ["have to", "must", "don't have to", "mustn't"], "C", "Dịch: Bố mẹ tôi luôn cởi mở với những quan điểm khác nhau. Tôi không bắt buộc phải đồng ý với ý kiến của họ.", "Cấu trúc 'don't have to':", "Vì bố mẹ rất tâm lý và cởi mở (open to different views), người con không bị ép phải đồng tình: <span class='highlight-green-tag'>don't have to</span>.", ["have to: phải", "must: bắt buộc", "don't have to: không bắt buộc phải làm", "mustn't: cấm không được đồng ý (sai nghĩa)"]),
+      makeQ(101, "ex2", "Ex2 - Câu 13", "Modal Verbs (Advice/Opinion)", "Question 101 (Ex2 - Câu 13): I think parents ______ limit their children's screen time to protect their eyesight.", ["mustn't", "don't have to", "shouldn't", "should"], "D", "Dịch: Tôi nghĩ các bậc phụ huynh nên giới hạn thời gian sử dụng màn hình của con cái để bảo vệ thị lực cho chúng.", "Cấu trúc 'I think + S + should + V':", "Khi nêu ý kiến khuyên nhủ tích cực bắt đầu bằng <b>I think</b>, ta luôn dùng <span class='highlight-green-tag'>should</span>.", ["mustn't: cấm", "don't have to: không cần", "shouldn't: không nên", "should: nên làm gì"]),
+      makeQ(102, "ex2", "Ex2 - Câu 14", "Modal Verbs (Negative Advice)", "Question 102 (Ex2 - Câu 14): Parents ______ expect their children to take care of them when they get old. Their adult children will have their own life and many other duties.", ["shouldn't", "don't have to", "must", "should"], "A", "Dịch: Cha mẹ không nên kỳ vọng con cái phải phụng dưỡng mình khi về già. Những người con trưởng thành sẽ có cuộc sống riêng và nhiều bổn phận khác.", "Modal verb 'shouldn't' (Khuyên không nên):", "Vế sau giải thích con cái trưởng thành có cuộc sống và gánh nặng riêng, vì vậy cha mẹ không nên đặt nặng kỳ vọng đó: <span class='highlight-green-tag'>shouldn't</span>.", ["shouldn't: không nên", "don't have to: không cần", "must: bắt buộc (ngược nghĩa vế sau)", "should: nên (ngược nghĩa vế sau)"]),
+      makeQ(103, "ex2", "Ex2 - Câu 15", "Modal Verbs (Obligation)", "Question 103 (Ex2 - Câu 15): There are agreed rules in each family that its members ______ follow.", ["don't have to", "must", "mustn't", "had to"], "B", "Dịch: Có những quy tắc đã được thống nhất trong mỗi gia đình mà các thành viên bắt buộc phải tuân theo.", "Modal verb 'must' (Tuân thủ quy tắc):", "Đã là quy tắc chung được thống nhất (agreed rules) ở hiện tại (There are) thì các thành viên phải tuân thủ: <span class='highlight-green-tag'>must</span>.", ["don't have to: không cần tuân theo", "must: bắt buộc phải tuân theo", "mustn't: cấm tuân theo", "had to: thì quá khứ (câu đang dùng There are ở hiện tại)"]),
+      makeQ(104, "ex2", "Ex2 - Câu 16", "Modal Verbs (Lack of Necessity)", "Question 104 (Ex2 - Câu 16): You should be yourself! You ______ worry too much about what other people think about you.", ["should", "have to", "don't have to", "didn't have to"], "C", "Dịch: Bạn hãy là chính mình! Bạn không cần phải lo lắng quá nhiều về những gì người khác nghĩ về bạn.", "Cấu trúc 'don't have to worry':", "Lời động viên ở hiện tại rằng bạn không cần thiết phải bận tâm quá mức: <span class='highlight-green-tag'>don't have to</span>.", ["should: nên lo lắng (sai nghĩa)", "have to: phải lo lắng (sai nghĩa)", "don't have to: không cần phải", "didn't have to: ở quá khứ"]),
+      makeQ(105, "ex2", "Ex2 - Câu 17", "Modal Verbs (External Obligation)", "Question 105 (Ex2 - Câu 17): In some cultures, women don't get an education. They ______ stay at home and do all the household chores.", ["shouldn't", "don't have to", "should", "have to"], "D", "Dịch: Ở một số nền văn hóa, phụ nữ không được đi học. Họ buộc phải ở nhà và làm toàn bộ công việc nội trợ.", "Modal verb 'have to' (Nghĩa vụ bắt buộc do định kiến/hoàn cảnh bên ngoài):", "Do quy định/tập tục xã hội áp đặt từ bên ngoài ở hiện tại (don't get), phụ nữ buộc phải làm: <span class='highlight-green-tag'>have to</span>.", ["shouldn't: không nên", "don't have to: không cần", "should: nên (không phải lời khuyên tốt)", "have to: buộc phải làm (do hoàn cảnh/tập tục khách quan)"]),
+      makeQ(106, "ex2", "Ex2 - Câu 18", "Modal Verbs (Strong Necessity)", "Question 106 (Ex2 - Câu 18): You ______ learn to keep your bedroom tidy. No one can clean it for you.", ["must", "had to", "mustn't", "shouldn't"], "A", "Dịch: Con phải học cách giữ phòng ngủ của mình gọn gàng. Không ai có thể dọn dẹp nó thay cho con được.", "Modal verb 'must' (Lời nhắc nhở nghiêm khắc từ cha mẹ):", "Người nói (cha mẹ) nhấn mạnh sự bắt buộc ở hiện tại (No one can clean it for you): <span class='highlight-green-tag'>must</span>.", ["must: bắt buộc phải làm", "had to: quá khứ", "mustn't: cấm", "shouldn't: không nên"]),
+      makeQ(107, "ex2", "Ex2 - Câu 19", "Modal Verbs in the Past (Had to)", "Question 107 (Ex2 - Câu 19): Fifty years ago, my grandmother ______ stay at home and do all housework. She couldn't go to school like her brothers.", ["must", "had to", "didn't have to", "should"], "B", "Dịch: Năm mươi năm trước, bà tôi đã phải ở nhà và làm toàn bộ việc nhà. Bà không thể đi học như các anh em trai của mình.", "Dấu hiệu quá khứ 'Fifty years ago':", "Mốc thời gian quá khứ rõ ràng <b>Fifty years ago</b> và <b>couldn't</b> đòi hỏi động từ khuyết thiếu ở quá khứ khẳng định: <span class='highlight-green-tag'>had to</span>.", ["must không dùng cho quá khứ", "had to: đã phải làm gì trong quá khứ", "didn't have to: đã không cần phải làm (sai nghĩa)", "should: nên"]),
+      makeQ(108, "ex2", "Ex2 - Câu 20", "Modal Verbs (Prohibition)", "Question 108 (Ex2 - Câu 20): You ______ wear shorts to school. It’s against the school rules.", ["should", "have to", "mustn't", "don't have to"], "C", "Dịch: Bạn không được phép mặc quần đùi đến trường. Điều đó vi phạm nội quy nhà trường.", "Dấu hiệu 'against the school rules' (vi phạm nội quy):", "Hành vi trái với quy định nhà trường bị cấm tuyệt đối bằng <span class='highlight-green-tag'>mustn't</span>.", ["should: nên", "have to: phải", "mustn't: cấm, không được phép", "don't have to: không cần"]),
+      makeQ(109, "ex2", "Ex2 - Câu 21", "Modal Verbs (Negative Advice)", "Question 109 (Ex2 - Câu 21): I think parents ______ compare their children to others'. They will become less confident in their abilities.", ["should", "have to", "must", "shouldn't"], "D", "Dịch: Tôi nghĩ các bậc cha mẹ không nên so sánh con mình với con người khác. Chúng sẽ trở nên kém tự tin vào khả năng của bản thân.", "Cấu trúc 'I think + S + shouldn't + V':", "Việc so sánh gây hậu quả tiêu cực (become less confident), nên ta khuyên cha mẹ không nên làm: <span class='highlight-green-tag'>shouldn't</span>.", ["should: nên", "have to: phải", "must: bắt buộc", "shouldn't: không nên làm gì"]),
+      makeQ(110, "ex2", "Ex2 - Câu 22", "Modal Verbs (Lack of Necessity)", "Question 110 (Ex2 - Câu 22): My parents respect my choices. I ______ follow in their footsteps.", ["don't have to", "mustn't", "should", "have to"], "A", "Dịch: Bố mẹ tôi tôn trọng sự lựa chọn của tôi. Tôi không bắt buộc phải nối nghiệp họ.", "Cấu trúc 'don't have to':", "Vì bố mẹ tôn trọng quyết định riêng của con, người con không cần phải đi theo nghề của bố mẹ: <span class='highlight-green-tag'>don't have to</span>.", ["don't have to: không cần thiết / không bắt buộc phải", "mustn't: cấm không được nối nghiệp (sai nghĩa)", "should: nên", "have to: bắt buộc phải"]),
+      makeQ(111, "ex2", "Ex2 - Câu 23", "Modal Perfect (Logical Deduction)", "Question 111 (Ex2 - Câu 23): David looks upset. He ______ have had a serious argument with his father about their different opinions.", ["must", "should", "could", "had to"], "A", "Dịch: David trông có vẻ rất buồn bực. Chắc hẳn cậu ấy vừa mới có một cuộc tranh cãi gay gắt với bố về những quan điểm bất đồng.", "Suy luận có căn cứ trong quá khứ 'must have + V3/ed':", "Dựa vào dấu hiệu hiện tại (<i>David looks upset</i>), ta suy luận chắc chắn một việc vừa xảy ra trong quá khứ: <span class='highlight-green-tag'>must have had</span> (chắc hẳn đã...).", ["must have + V3: chắc hẳn đã làm gì (suy luận logic cao)", "should have + V3: lẽ ra nên làm nhưng đã không làm", "could: có thể", "không có cấu trúc had to have had"]),
+      makeQ(112, "ex2", "Ex2 - Câu 24", "Modal Verbs (Obligation)", "Question 112 (Ex2 - Câu 24): Young people ______ obey their parents.", ["must", "need", "should", "ought to"], "A", "Dịch: Người trẻ tuổi phải vâng lời cha mẹ của mình.", "Modal verb 'must' (Nghĩa vụ gia đình):", "Trong ngữ cảnh bổn phận con cái vâng lời cha mẹ (obey their parents), động từ khuyết thiếu nhấn mạnh nghĩa vụ là <span class='highlight-green-tag'>must</span> (hoặc <i>should / ought to</i> tùy thang độ).", ["must: phải vâng lời", "need thiếu giới từ to (need to obey)", "should: lời khuyên", "ought to: lời khuyên"]),
+      makeQ(113, "ex2", "Ex2 - Câu 25", "Modal Verbs (Needn't)", "Question 113 (Ex2 - Câu 25): My parents were just sharing their opinions. You ______ get so angry.", ["must", "mustn't", "might", "needn't"], "D", "Dịch: Bố mẹ chỉ đang chia sẻ quan điểm của họ thôi mà. Cậu không cần phải nổi giận như thế đâu.", "Modal verb 'needn't' (Không cần thiết phải phản ứng thái quá):", "Khuyên bạn không việc gì phải nổi nóng khi bố mẹ chỉ đang góp ý: <span class='highlight-green-tag'>needn't</span>.", ["must: phải tức giận (sai)", "mustn't: cấm đoán", "might: có lẽ", "needn't: không cần phải"]),
+
+      /* ==================== EXERCISE 3: ARRANGEMENT (9 CÂU) ==================== */
+      makeQ(114, "ex3", "Ex3 - Câu 1", "Dialogue Arrangement", "Question 114 (Exercise 3 - Câu 1): Choose the best arrangement of utterances to make a meaningful exchange:", ["b-a-c", "c-a-b", "a-c-b", "c-b-a"], "B", "Dịch: Sắp xếp hội thoại giữa Teen và Mom về cách sử dụng mạng xã hội an toàn.", "Mạch hội thoại Mở đầu → Hỏi → Đáp:", "1. <b>c. Teen:</b> Con biết mẹ không hiểu mạng xã hội, nhưng nó giúp con kết nối với bạn bè.<br>2. <b>a. Mom:</b> Con có thể dạy mẹ cách dùng an toàn không? Mẹ lo về quyền riêng tư.<br>3. <b>b. Teen:</b> Chắc chắn rồi, con sẽ chỉ mẹ từng bước.<br>Thứ tự đúng: <span class='highlight-green-tag'>c - a - b</span>.", ["b-a-c: câu trả lời Sure đứng đầu là sai", "c-a-b: chuẩn mạch hội thoại", "a-c-b: hỏi trước khi giới thiệu chủ đề", "c-b-a: trả lời trước khi mẹ hỏi"], "<b>a. Mom:</b> Can you teach me how to use it safely? I’m worried about privacy.<br><b>b. Teen:</b> Sure, I’ll show you step by step and set up privacy settings together.<br><b>c. Teen:</b> Mom, I know you don’t understand social media, but it helps me stay connected with friends."),
+      makeQ(115, "ex3", "Ex3 - Câu 2", "Dialogue Arrangement", "Question 115 (Ex3 - Câu 2): Choose the best arrangement of utterances to make a meaningful exchange:", ["c-a-b", "b-a-c", "b-c-a", "a-b-c"], "C", "Dịch: Sắp xếp hội thoại giữa Con gái và Mẹ về việc chọn ngành Thiết kế đồ họa thay vì ngành Luật.", "Mạch hội thoại Đề xuất → Lo lắng → Cam kết:", "1. <b>b. Daughter:</b> Mẹ ơi, con muốn học thiết kế đồ họa thay vì ngành luật như mẹ gợi ý.<br>2. <b>c. Mom:</b> Mẹ lo nghệ thuật không phải nghề ổn định; mẹ chỉ muốn con được đảm bảo.<br>3. <b>a. Daughter:</b> Con hiểu, nhưng con sẽ chăm chỉ để chứng minh mình thành công.<br>Thứ tự đúng: <span class='highlight-green-tag'>b - c - a</span>.", ["sai mở đầu", "con trả lời I understand trước khi mẹ nói", "b-c-a: chuẩn logic đối đáp", "sai mở đầu"], "<b>a. Daughter:</b> I understand, but I’ll work hard to prove I can succeed in my own path.<br><b>b. Daughter:</b> Mom, I want to study graphic design instead of law as you suggested.<br><b>c. Mom:</b> I worry that art isn’t a stable career; I just want you to be secure."),
+      makeQ(116, "ex3", "Ex3 - Câu 3", "Dialogue Arrangement (5 turns)", "Question 116 (Ex3 - Câu 3): Choose the best arrangement of utterances to make a meaningful exchange:", ["c-d-a-b-e", "a-d-c-b-e", "c-b-a-d-e", "a-b-c-d-e"], "C", "Dịch: Sắp xếp cuộc trò chuyện 5 lượt lời giữa Emily và Mẹ về việc xin nghỉ phép 1 năm (gap year) trước đại học.", "Phân tích mạch đối đáp 5 câu (Emily - Mom - Emily - Mom - Emily):", "Trong hội thoại 2 người, các lượt lời phải luân phiên nhau (Emily → Mom → Emily → Mom → Emily).<br>• Đáp án A (c-d-a-b-e) và C (c-b-a-d-e) đều đảm bảo tính luân phiên:<br>- Mở đầu: <b>c (Emily)</b> xin đi gap year.<br>- Nếu theo <b>c - b - a - d - e</b>: <b>b (Mom)</b>: Nhưng thời của mẹ, gap year bị coi là lãng phí thời gian → <b>a (Emily)</b>: Thời thế thay đổi rồi (Times have changed), nhiều nhà tuyển dụng nay đánh giá cao kinh nghiệm sống → <b>d (Mom)</b>: Mẹ chỉ lo nó làm chậm trễ sự nghiệp của con → <b>e (Emily)</b>: Con hiểu, hãy cùng xem kế hoạch có cả thực tập khi đi du lịch nhé.<br>(Lưu ý: Cặp <b>b</b> <i>'in our time'</i> → <b>a</b> <i>'Times have changed'</i> ăn khớp tuyệt đối về từ khóa thời gian!). Đáp án chuẩn: <span class='highlight-green-tag'>C (c-b-a-d-e)</span> (hoặc A tùy đáp án gốc của trường).", ["c-d-a-b-e: cũng luân phiên nhưng b 'But in our time' nối với e 'I understand' kém tự nhiên hơn d nối với e", "a-d-c-b-e: sai câu mở đầu", "c-b-a-d-e: khớp hoàn hảo cặp 'in our time' (b) -> 'Times have changed' (a) và 'worry delay career' (d) -> 'internships' (e)", "a-b-c-d-e: sai mở đầu"], "<b>a. Emily:</b> Times have changed—many employers now value life experience.<br><b>b. Mom:</b> But in our time, taking a gap year was seen as wasting time.<br><b>c. Emily:</b> Mom, I want a gap year before university to travel.<br><b>d. Mom:</b> I’m just worried it might delay your career start.<br><b>e. Emily:</b> I understand, let’s look at a plan that includes internships while traveling."),
+      makeQ(117, "ex3", "Ex3 - Câu 4", "Dialogue Arrangement (5 turns)", "Question 117 (Ex3 - Câu 4): Choose the best arrangement of utterances to make a meaningful exchange:", ["d-c-b-e-a", "d-e-a-c-b", "d-c-a-e-b", "a-c-b-e-d"], "B", "Dịch: Sắp xếp cuộc trò chuyện giữa Alex và Bố về việc chọn học chuyên ngành Thể thao điện tử (Esports).", "Mạch hội thoại luân phiên Alex - Dad - Alex - Dad - Alex:", "1. <b>d. Alex:</b> Bố ơi, con nghĩ con sẽ học chuyên ngành Esports thay vì Kinh doanh.<br>2. <b>e. Dad:</b> Nhưng đó đâu phải công việc thực sự—con sẽ tự nuôi sống bản thân thế nào?<br>3. <b>a. Alex:</b> Esports là ngành công nghiệp đang phát triển với nhiều học bổng và tài trợ.<br>4. <b>c. Dad:</b> Cho đến tận bây giờ bố thậm chí còn chưa biết Esports là gì.<br>5. <b>b. Alex:</b> Để con cho bố xem một số sự nghiệp Esports thành công và thu nhập của họ nhé.<br>Thứ tự đúng: <span class='highlight-green-tag'>d - e - a - c - b</span>.", ["d-c-b-e-a: kết thúc bằng câu a không hợp bằng câu b", "d-e-a-c-b: chuẩn hoàn hảo mạch đối đáp", "d-c-a-e-b: hai câu e và b cuối chưa khớp bằng c và b", "a-c-b-e-d: sai câu mở đầu"], "<b>a. Alex:</b> Esports is a growing industry with scholarships and sponsorships.<br><b>b. Alex:</b> Let me show you some successful esports careers and their earnings.<br><b>c. Dad:</b> I didn’t even know what esports was until now.<br><b>d. Alex:</b> Dad, I think I’ll major in esports instead of business.<br><b>e. Dad:</b> But that’s not a ‘real’ job—how will you support yourself?"),
+      makeQ(118, "ex3", "Ex3 - Câu 5", "Letter Arrangement", "Question 118 (Ex3 - Câu 5): Choose the best arrangement of sentences to make a meaningful letter (Dear Dad, ... Love, Tran Thien Huy):", ["d-a-c-b", "c-a-d-b", "c-d-b-a", "c-d-a-b"], "B", "Dịch: Sắp xếp bức thư Trần Thiên Huy gửi Bố chia sẻ về ước mơ theo đuổi ngành Thiết kế đồ họa.", "Mạch lập luận Thấu hiểu quan điểm bố → Nêu góc nhìn mới → Chốt ngành học → Mong cầu nối:", "1. <b>c:</b> Con biết bố tin rằng nghề truyền thống như luật hay y là con đường an toàn nhất.<br>2. <b>a:</b> Tuy nhiên (However), con cảm thấy trong thế giới số ngày nay, sự sáng tạo cũng quan trọng không kém.<br>3. <b>d:</b> Đó là lý do tại sao (That's why) con muốn theo đuổi thiết kế đồ họa...<br>4. <b>b:</b> Con rất tôn trọng ý kiến của bố và hy vọng chúng ta có thể thu hẹp khoảng cách thế hệ.<br>Thứ tự đúng: <span class='highlight-green-tag'>c - a - d - b</span>.", ["d-a-c-b: không thể bắt đầu bằng That's why (d)", "c-a-d-b: chuẩn mạch lập luận nhượng bộ - nguyên nhân - kết quả - lời kết", "c-d-b-a: đặt c rồi đến d ngay thì thiếu lý do cho That's why", "c-d-a-b: sai vị trí a và d"], "<b>Dear Dad,</b><br><b>a.</b> However, I feel that in today’s digital world, creativity and life experience matter just as much as formal degrees.<br><b>b.</b> I respect your opinions deeply and hope we can bridge our generation gap with open conversation and understanding.<br><b>c.</b> I know you believe a traditional career—like law or medicine—is the safest path.<br><b>d.</b> That’s why I want to pursue graphic design—it may seem unconventional, but I believe it can lead to a fulfilling and stable future.<br><b>Love, Tran Thien Huy</b>"),
+      makeQ(119, "ex3", "Ex3 - Câu 6", "Letter Arrangement", "Question 119 (Ex3 - Câu 6): Choose the best arrangement of sentences to make a meaningful letter (Dear Dad, ... Love, Win):", ["b-c-d-e-a", "d-e-c-b-a", "c-d-a-e-b", "d-a-b-c-e"], "B", "Dịch: Sắp xếp bức thư của Win gửi Bố dẫn chứng số liệu thực tế về ngành công nghiệp sáng tạo tại Anh.", "Phân tích từ chỉ định 'they' và 'These jobs':", "• Câu <b>d</b> giới thiệu <i>the creative industries—fields like graphic design, digital media, and UX—are booming</i>.<br>• Câu <b>e</b> nối tiếp bằng số liệu: <i>In the UK alone, <b>they</b> contributed about £125 billion and employed over 2.4 million people...</i>.<br>• Câu <b>c</b>: <i><b>These jobs</b> not only offer economic stability...</i>.<br>• Câu <b>b</b> và <b>a</b>: Liên hệ bản thân và chốt lại <i>I hope <b>this data</b> helps narrow our generation gap</i>.<br>Trong 4 phương án, <span class='highlight-green-tag'>B (d - e - c - b - a)</span> giữ đúng cụm liên kết chặt chẽ <b>d - e - c</b> và kết thư bằng câu <b>a</b>.", ["b-c-d-e-a: đặt c ngay sau b thì chưa có danh từ số nhiều cho These jobs", "d-e-c-b-a: liên kết hoàn hảo d (creative industries) -> e (they contributed £125b) -> c (These jobs) -> b -> a (this data)", "c-d-a-e-b: mở đầu bằng These jobs là sai", "d-a-b-c-e: kết thư bằng số liệu e là thiếu câu kết tình cảm"], "<b>Dear Dad,</b><br><b>a.</b> I respect your desire for me to have a secure job, and I hope this data helps narrow our generation gap by showing that creative work can be both meaningful and sustainable.<br><b>b.</b> I know you prefer traditional career paths, but I see graphic design as a viable foundation for a modern future.<br><b>c.</b> These jobs not only offer economic stability but also support remote work, well-being, and use of digital skills—traits highly valued in our generation.<br><b>d.</b> Today, I realize that the creative industries—fields like graphic design, digital media, and UX—are booming.<br><b>e.</b> In the UK alone, they contributed about £125 billion and employed over 2.4 million people as of 2024.<br><b>Love, Win</b>"),
+      makeQ(120, "ex3", "Ex3 - Câu 7", "Letter Arrangement", "Question 120 (Ex3 - Câu 7): Choose the best arrangement of sentences to make a meaningful letter (Dear Mom, ... Love, Thắng):", ["a-c-d-e-b", "a-e-b-c-d", "e-d-a-c-b", "b-a-e-c-d"], "A", "Dịch: Sắp xếp bức thư của Thắng gửi Mẹ về sự khác biệt giữa gặp mặt trực tiếp và nhắn tin nhanh.", "Mạch lập luận So sánh 2 thế hệ → Đánh giá → Giải pháp kết hợp → Mong muốn:", "1. <b>a:</b> Con biết mẹ thích gặp trực tiếp (face-to-face), và con tôn trọng điều đó.<br>2. <b>c:</b> Con lại thích gõ tin nhắn nhanh trên Slack hoặc nhắn tin—nó nhanh và rõ ràng.<br>3. <b>d:</b> Chúng ta có những cách trò chuyện khác nhau, nhưng cả hai cách đều có điểm tốt (both have good points).<br>4. <b>e:</b> Có lẽ chúng ta có thể dùng cả hai (use both)—nhắn tin nhanh trước rồi gặp nói chuyện trực tiếp nếu quan trọng.<br>5. <b>b:</b> Con thực sự muốn chúng ta hiểu nhau hơn và thu hẹp khoảng cách thế hệ.<br>Thứ tự đúng: <span class='highlight-green-tag'>a - c - d - e - b</span>.", ["a-c-d-e-b: mạch văn tự nhiên và chặt chẽ tuyệt đối", "a-e-b-c-d: đưa giải pháp e lên trước khi nêu cách của con c là sai", "e-d-a-c-b: mở đầu bằng Maybe we can use both khi chưa nêu 2 cách là sai", "b-a-e-c-d: thiếu sự đối chiếu a và c trước khi nói use both (e)"], "<b>Dear Mom,</b><br><b>a.</b> I know you like meeting people face-to-face, and I respect that — it’s part of how our generation builds trust.<br><b>b.</b> I really want us to understand each other better and close our generation gap.<br><b>c.</b> I prefer typing a quick message on Slack or texting—it’s fast and clear, and many of my friends do the same.<br><b>d.</b> We have different ways to talk, but both have good points.<br><b>e.</b> Maybe we can use both — a quick message first and then a talk in person if it’s important.<br><b>Love, Thắng</b>"),
+      makeQ(121, "ex3", "Ex3 - Câu 8", "Paragraph Arrangement", "Question 121 (Ex3 - Câu 8): Choose the best arrangement of sentences to make a meaningful paragraph:", ["c-a-d-b", "c-d-a-b", "c-a-b-d", "a-d-c-b"], "B", "Dịch: Sắp xếp đoạn văn nghị luận về sự khác biệt trong phong cách giao tiếp giữa các thế hệ.", "Phân tích từ quy chiếu 'This communication style gap' và 'these approaches':", "1. <b>c:</b> Nêu thực trạng: Thế hệ lớn tuổi thích nói chuyện trực tiếp, trong khi người trẻ nghiêng về nhắn tin và ứng dụng.<br>2. <b>d:</b> <i><b>This communication style gap</b></i> (Khoảng cách về phong cách giao tiếp này - quy chiếu trực tiếp câu c) phản ánh khoảng cách thế hệ rộng hơn trong thói quen hàng ngày.<br>3. <b>a:</b> Mặc dù phương pháp khác nhau, việc kết hợp cả hai—bắt đầu bằng tin nhắn nhanh và theo sau là cuộc trò chuyện—có thể cải thiện sự thấu hiểu.<br>4. <b>b:</b> <i><b>Blending these approaches</b></i> (Việc pha trộn các cách tiếp cận này - quy chiếu câu a) giúp thu hẹp khoảng cách thế hệ.<br>Thứ tự đúng: <span class='highlight-green-tag'>c - d - a - b</span>.", ["c-a-d-b: đặt d sau a làm đứt mạch 'combining both' (a) -> 'Blending these approaches' (b)", "c-d-a-b: chuẩn xác tuyệt đối về phép quy chiếu", "c-a-b-d: câu d đứng cuối bị lạc lõng", "a-d-c-b: mở đầu bằng Although methods differ khi chưa nêu các phương pháp"], "<b>a.</b> Although methods differ, combining both—starting with a quick text and following up with a conversation—can improve understanding.<br><b>b.</b> Blending these approaches helps bridge the generation gap and strengthen relationships across ages.<br><b>c.</b> Preferring face-to-face talks over digital messages is more common among older generations, while younger people lean toward texting and apps.<br><b>d.</b> This communication style gap reflects a wider generation gap in daily habits."),
+      makeQ(122, "ex3", "Ex3 - Câu 9", "Paragraph Arrangement", "Question 122 (Ex3 - Câu 9): Choose the best arrangement of sentences to make a meaningful paragraph:", ["b-a-d-c", "a-b-d-c", "b-d-a-c", "a-d-b-c"], "A", "Dịch: Sắp xếp đoạn văn về công cụ kỹ thuật số và giải pháp dung hòa giao tiếp giữa người lớn tuổi và người trẻ.", "Mạch phát triển Tổng quan số liệu → Cụ thể hóa vấn đề → Hệ quả → Giải pháp:", "1. <b>b:</b> Nhiều người lớn tuổi (73%) nói rằng công cụ số giúp họ kết nối với người trẻ, nhưng một số cảm thấy bối rối trước công nghệ mới.<br>2. <b>a:</b> Người trẻ thường thích các ứng dụng nhắn tin nhanh, điều mà thế hệ lớn tuổi có thể hiểu lầm.<br>3. <b>d:</b> Khi tin nhắn đến đột ngột hoặc cuộc trò chuyện dừng lại không báo trước, cả hai phía đều có thể cảm thấy bị bỏ rơi.<br>4. <b>c:</b> (Giải pháp kết bài): Kết hợp tin nhắn nhanh với những cuộc gọi hoặc trò chuyện trực tiếp có thể giúp các thế hệ cảm thấy được thấu hiểu hơn.<br>Thứ tự chuẩn: <span class='highlight-green-tag'>b - a - d - c</span> (hoặc <b>a - b - d - c</b>).", ["b-a-d-c: mở đầu bằng số liệu thống kê (b) -> thói quen người trẻ (a) -> hệ quả (d) -> giải pháp kết hợp (c)", "a-b-d-c: cũng rất hợp lý khi đối chiếu a và b rồi dẫn tới d và chốt bằng giải pháp c", "b-d-a-c: đặt d trước a thì chưa nhắc tới messages", "a-d-b-c: ngắt quãng giữa b và d"], "<b>a.</b> Younger people often prefer fast messaging apps, like texting or chat, which older generations may misunderstand.<br><b>b.</b> Many older adults (73%) say digital tools help them connect with younger people, but some feel confused by new technology.<br><b>c.</b> Blending quick texts with occasional phone or face-to-face chats can help different generations feel more understood.<br><b>d.</b> When messages arrive suddenly or conversations stop without warning, both sides can feel left out.")
+    ];
+
+    const userAnswers = {};
+    let currentFilter = 'all';
+
+    function filterSection(sec, btnEl) {
+      currentFilter = sec;
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      if (btnEl) btnEl.classList.add('active');
+      renderQuiz();
+    }
+
+    function renderQuiz() {
+      const container = document.getElementById('quizContainer');
+      container.innerHTML = '';
+
+      let lastSec = '';
+      quizData.forEach((q) => {
+        if (currentFilter !== 'all' && q.sec !== currentFilter) return;
+
+        if (q.sec !== lastSec) {
+          lastSec = q.sec;
+          const banner = document.createElement('div');
+          banner.className = 'section-banner';
+          if (q.sec === 'ex1') {
+            banner.innerHTML = '<span>📘 EXERCISE 1: VOCABULARY & GRAMMAR</span><span>88 Câu (Câu 1 – 88)</span>';
+          } else if (q.sec === 'ex2') {
+            banner.innerHTML = '<span>📗 EXERCISE 2: MODAL VERBS (MUST / HAVE TO / SHOULD / OUGHT TO)</span><span>25 Câu (Câu 89 – 113)</span>';
+          } else if (q.sec === 'ex3') {
+            banner.innerHTML = '<span>📙 EXERCISE 3: SENTENCE & DIALOGUE ARRANGEMENT</span><span>9 Câu (Câu 114 – 122)</span>';
+          }
+          container.appendChild(banner);
+        }
+
+        const card = document.createElement('div');
+        card.className = 'quiz-card';
+        card.id = `qCard_${q.id}`;
+
+        const selectedKey = userAnswers[q.id];
+        const isAnswered = selectedKey !== undefined;
+        const isCorrect = selectedKey === q.correct;
+
+        let optionsHtml = '';
+        q.options.forEach(opt => {
+          let stateClass = '';
+          if (isAnswered) {
+            if (opt.key === selectedKey) {
+              stateClass = isCorrect ? 'selected-correct' : 'selected-wrong';
+            } else if (opt.key === q.correct) {
+              stateClass = 'show-truth';
+            }
+          }
+          optionsHtml += `
+            <button class="option-btn ${stateClass}" id="opt_${q.id}_${opt.key}" onclick="handleSelect(${q.id}, '${opt.key}')">
+              <span class="opt-key">${opt.key}</span>
+              <span class="opt-text">${opt.text}</span>
+            </button>
+          `;
+        });
+
+        let cardsHtml = '';
+        q.analysis.forEach(item => {
+          const isCor = item.badgeType === 'correct';
+          cardsHtml += `
+            <div class="exp-card-item">
+              <div class="exp-card-header">
+                <span class="card-word ${isCor ? 'word-correct' : 'word-wrong'}">${item.word}</span>
+                <span class="badge-pill ${isCor ? 'badge-pill-correct' : 'badge-pill-wrong'}">${item.badge}</span>
+              </div>
+              <div class="card-meaning">${item.note}</div>
+            </div>
+          `;
+        });
+
+        let whyWrongHtml = '';
+        q.whyWrong.forEach(item => {
+          whyWrongHtml += `
+            <div style="margin-bottom: 6px;">
+              <span class="wrong-key-pill">${item.word}</span> – ${item.reason}
+            </div>
+          `;
+        });
+
+        card.innerHTML = `
+          <div class="card-top">
+            <span class="q-number-pill">#${q.id} (${q.label})</span>
+            <span class="q-tag-pill">${q.type}</span>
+          </div>
+          <div class="q-text">
+            ${q.question}
+            ${q.subtext ? `<div style="margin-top: 10px; color: #2D3436; background: #F8FAFC; padding: 12px 16px; border-radius: 14px; border-left: 5px solid #0984E3; font-weight: 700; font-size: 0.98rem; line-height: 1.65;">${q.subtext}</div>` : ''}
+          </div>
+          <div class="options-grid ${q.options.length === 4 ? 'grid-2col' : ''}">
+            ${optionsHtml}
+          </div>
+
+          <div class="explanation-container" id="exp_${q.id}" style="display: ${isAnswered ? 'block' : 'none'};">
+            <div class="exp-title-row">
+              <span>⚡ GIẢI THÍCH CHI TIẾT</span>
+            </div>
+            <div class="exp-trans-box">
+              <span style="font-size: 1.2rem;">💬</span>
+              <div>${q.trans}</div>
+            </div>
+            <div class="exp-section-title">1. Phân tích 4 đáp án:</div>
+            <div class="exp-grid-cards">${cardsHtml}</div>
+            <div class="exp-block">
+              <div style="font-weight: 900; color: #00BA66; margin-bottom: 4px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+                <span>2. ✅ TẠI SAO ĐÚNG?</span>
+                <span class="rule-tag">${q.whyCorrect.rule}</span>
+              </div>
+              <div style="color: #2D3436; padding-left: 22px;">${q.whyCorrect.content}</div>
+            </div>
+            <div class="exp-block" style="margin-bottom: 0;">
+              <div style="font-weight: 900; color: #FF4757; margin-bottom: 4px;">
+                <span>3. ❌ TẠI SAO SAI?</span>
+              </div>
+              <div style="color: #4A4A4A; padding-left: 22px;">${whyWrongHtml}</div>
+            </div>
+          </div>
+        `;
+
+        container.appendChild(card);
+      });
+    }
+
+    function handleSelect(questionId, selectedKey) {
+      const q = quizData.find(item => item.id === questionId);
+      if (!q) return;
+
+      userAnswers[questionId] = selectedKey;
+      const isCorrect = selectedKey === q.correct;
+
+      q.options.forEach(opt => {
+        const btn = document.getElementById(`opt_${q.id}_${opt.key}`);
+        if (!btn) return;
+        btn.classList.remove('selected-correct', 'selected-wrong', 'show-truth');
+
+        if (opt.key === selectedKey) {
+          btn.classList.add(isCorrect ? 'selected-correct' : 'selected-wrong');
+        } else if (opt.key === q.correct) {
+          btn.classList.add('show-truth');
+        }
+      });
+
+      if (isCorrect) {
+        playDing();
+        triggerConfetti(40);
+      } else {
+        playWrongSound();
+      }
+
+      const expBox = document.getElementById(`exp_${q.id}`);
+      if (expBox) expBox.style.display = 'block';
+
+      updateTopStats();
+    }
+
+    function updateTopStats() {
+      let correct = 0;
+      let totalAnswered = 0;
+
+      quizData.forEach(q => {
+        if (userAnswers[q.id] !== undefined) {
+          totalAnswered++;
+          if (userAnswers[q.id] === q.correct) correct++;
+        }
+      });
+
+      document.getElementById('correctScore').textContent = correct;
+      document.getElementById('answeredCount').textContent = totalAnswered;
+
+      const pct = (totalAnswered / quizData.length) * 100;
+      document.getElementById('progressBar').style.width = `${pct}%`;
+    }
+
+    function calculateAndShowResult() {
+      let correct = 0;
+      const total = quizData.length;
+
+      quizData.forEach(q => {
+        if (userAnswers[q.id] === q.correct) correct++;
+      });
+
+      const percentage = Math.round((correct / total) * 100);
+      document.getElementById('modalPercent').textContent = `${percentage}%`;
+      document.getElementById('modalFraction').textContent = `Đúng ${correct} / ${total} câu`;
+
+      const teacherQuoteEl = document.getElementById('modalTeacherQuote');
+      const trophyEl = document.getElementById('modalTrophy');
+
+      if (percentage < 50) {
+        trophyEl.textContent = '🌱';
+        teacherQuoteEl.textContent = '“Điểm lần này chưa cao lắm, con cố gắng đọc kỹ giải thích đáp án và làm lại nha. Cô tin con sẽ làm tốt hơn ở lần sau!”';
+      } else if (percentage >= 50 && percentage < 90) {
+        trophyEl.textContent = '🌟';
+        teacherQuoteEl.textContent = '“Con đã có tiến bộ khá ổn rồi, con cố gắng đọc kỹ giải thích đáp án và làm lại nha. Cô tin con sẽ làm tốt hơn ở lần sau!”';
+      } else {
+        trophyEl.textContent = '🏆';
+        teacherQuoteEl.textContent = '“Làm tốt lắm, con cố gắng ring điểm 10 ở lần sau nha!”';
+        triggerConfetti(120);
+      }
+
+      document.getElementById('scoreModal').classList.add('active');
+    }
+
+    function closeModal() {
+      document.getElementById('scoreModal').classList.remove('active');
+    }
+
+    function restartQuiz() {
+      for (const k in userAnswers) delete userAnswers[k];
+      closeModal();
+      renderQuiz();
+      updateTopStats();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function initAppNow() {
+      initBackgroundElements();
+      renderQuiz();
+      updateTopStats();
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initAppNow);
+    } else {
+      initAppNow();
+    }
+  </script>
+</body>
+</html>
